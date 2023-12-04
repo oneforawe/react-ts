@@ -47,3 +47,14 @@ that.
 * `npm install --save-dev stylelint-config-standard --legacy-peer-deps`
 
 See an [error](./docs/Error.md) I had to fix initially.
+
+### Import Aliases
+
+The packages `craco` and `craco-alias` enable import aliases and abbreviations
+and generally enable more concise import statements.
+
+* `npm install @craco/craco`
+* `npm install --save-dev craco-alias`
+* new file: `craco.config.js`
+* new file: `tsconfig.paths.json`
+* modified: `tsconfig.json`
