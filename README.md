@@ -27,6 +27,13 @@ The following commands were used to initialize the repository.
 * `vim .gitconfig`  (add `.gitconfig` file with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
+### Reorganizing
+
+Move some packages from `dependencies` to `devDependencies`.
+
+* `npm install --save-dev @types/node @types/react @types/react-dom @types/jest`
+* `npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom`
+
 ### Linting
 
 If trying to set-up a repo like this again, you might want to try the below
