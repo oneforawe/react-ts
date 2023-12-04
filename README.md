@@ -3,9 +3,22 @@
 A boilerplate/template repository for a React-App project in TypeScript. The
 commands below were not necessarily executed in the order shown.
 
-## Initializing Repo
+## Usage of the Repo
 
-Used the following commands to initialize the repository.
+Using a shell such as GNU Bash with git and node/npm installed, execute the
+following commands to get a copy of the repository, set it up, and run it (in
+development mode).
+
+* `git clone https://github.com/oneforawe/react-ts.git`
+* `cd react-ts`
+* `npm install`
+* `npm start`
+
+## Creation of the Repo
+
+### Initializing
+
+The following commands were used to initialize the repository.
 
 * `npx create-react-app react-ts --template typescript`
 * `cd react-ts`
@@ -14,7 +27,7 @@ Used the following commands to initialize the repository.
 * `vim .gitconfig`  (add `.gitconfig` file with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
-## Linting
+### Linting
 
 If trying to set-up a repo like this again, you might want to try the below
 commands without the flag `--legacy-peer-deps` first to see if it works without
