@@ -1,6 +1,6 @@
 type Resolve = (value: void) => void;
 
-type AvailableUnits =
+export type AvailableUnits =
   'milliseconds' | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks';
 
 interface Props {

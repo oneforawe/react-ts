@@ -1,6 +1,7 @@
 import './Weather.scss';
 import { use } from 'store';
 import { Data } from 'components/shared';
+import * as config from 'config';
 
 
 export const Weather: React.FC = () => {
@@ -25,6 +26,10 @@ export const Weather: React.FC = () => {
         <Data
           label="Report&nbsp;Time:"
           value={String(info?.report.location.localtime)}
+        />
+        <Data
+          label="Refresh&nbsp;Interval:"
+          value={config.consts.weather.refresh.interval}
         />
         <div className="footer">
           Powered by <a

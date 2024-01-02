@@ -1,4 +1,12 @@
 import { seconds, minutes } from 'helper/utility/units';
+import { type AvailableUnits } from 'helper/utility/setTimer';
+
+
+const refreshPeriodInMinutes: number = (20 * minutes);
+const refreshPeriodUnits: AvailableUnits = 'minutes';
+
+const refreshInterval = `${refreshPeriodInMinutes} ${refreshPeriodUnits}`;
+
 
 export const weather = {
   // refetch for failed fetches
@@ -13,6 +21,8 @@ export const weather = {
   },
   // refresh for updating weather info
   refresh: {
-    updatePeriodInMinutes: (20 * minutes),
+    updatePeriodInMinutes : refreshPeriodInMinutes,
+    updatePeriodUnits     : refreshPeriodUnits,
+    interval              : refreshInterval,
   },
 };

@@ -93,7 +93,7 @@ async function cycleRecursiveStep (
   // Delay loops by major refresh-cycle period to reduce load on server.
   await setTimer({
     durationMagnitude : config.consts.weather.refresh.updatePeriodInMinutes,
-    units             : 'minutes',
+    units             : config.consts.weather.refresh.updatePeriodUnits,
   });
 
   cycleRecursiveStep(dispatch, input);
