@@ -37,6 +37,14 @@ Move some packages from `dependencies` to `devDependencies`.
 * `npm install --save-dev @types/node @types/react @types/react-dom @types/jest`
 * `npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom`
 
+### Remove Warning
+
+* `npm install --save-dev @babel/plugin-proposal-private-property-in-object` (to remove a warning)
+
+See the [warning](./docs/Warning.md) I decided to fix.  (I had to add `--force`
+to the command above due to some seemingly unrelated dependency issues for
+linting.)
+
 ### Add-ons
 
 * `npm install sanitize.css` (for a preferred starting point with CSS)
@@ -45,7 +53,7 @@ Move some packages from `dependencies` to `devDependencies`.
 * `npm install lodash` (for computational utilities)
 * `npm install axios` (for HTTP requests)
 * `npm install runtypes` (for data validation when fetching from external API)  
-  (had to use `--force` due to some seemingly unrelated dependency issues)
+  (had to use `--force` due to some seemingly unrelated dependency issues for linting)
 
 ### Linting
 
