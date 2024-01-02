@@ -1,8 +1,8 @@
 {
   "name": "react-ts",
   "version": "0.1.0",
-  "homepage": "./",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "start": "craco start",
     "build": "craco build",

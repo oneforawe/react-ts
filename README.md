@@ -104,3 +104,10 @@ nicely object-based with auto-complete / tab-completion capabilities.
 * `npm install @reduxjs/toolkit`
 * `npm install react-redux`
 * `npm install --save-dev @types/react-redux`
+
+### Hosting
+
+Add a `homepage` location in `package.json` to allow hosting on a demo site with
+the app in its own folder.
+
+* `"homepage": "./"`
