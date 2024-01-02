@@ -1,23 +1,37 @@
+import './App.scss';
+import { DateTime } from './dateTime';
+import { Weather } from './weather';
+import { Counter } from './counter';
+import * as helper from 'helper';
 import logo from 'assets/logo.svg';
-import './App.css';
+
 
 export const App: React.FC = () => {
+
+  // Hooks
+  helper.hooks.dateTime.useDateTimeState();
+  helper.hooks.weather.useWeatherState({ 'city-name': 'San Francisco' });
+
   return (
     <div className="app">
-      <header className="app-header">
+      <div className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <p>
           Edit <code>src/components/App.tsx</code> and save to reload.
         </p>
         <a
-          className="app-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
         </a>
-      </header>
+      </div>
+      <div className="app-body">
+        <DateTime />
+        <Weather />
+        <Counter />
+      </div>
     </div>
   );
 };

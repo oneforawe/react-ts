@@ -9,7 +9,8 @@ necessarily executed in the order shown.
 Using a shell such as GNU Bash with [git](https://git-scm.com) and
 [node/npm/npx](https://nodejs.org) (and probably
 [nvm](https://github.com/nvm-sh/nvm)) installed, execute the following commands
-to get a copy of the repository, set it up, and run it (in development mode).
+to get a copy of the repository, set it up (by installing the packages), and run
+it (in development mode).
 
 * `git clone https://github.com/oneforawe/react-ts.git`
 * `cd react-ts`
@@ -36,6 +37,16 @@ Move some packages from `dependencies` to `devDependencies`.
 * `npm install --save-dev @types/node @types/react @types/react-dom @types/jest`
 * `npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom`
 
+### Add-ons
+
+* `npm install sanitize.css` (for a preferred starting point with CSS)
+* `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
+* `npm install luxon` (for date-time utilities)
+* `npm install lodash` (for computational utilities)
+* `npm install axios` (for HTTP requests)
+* `npm install runtypes` (for data validation when fetching from external API)  
+  (had to use `--force` due to some seemingly unrelated dependency issues)
+
 ### Linting
 
 Code-linting with [ESLint](https://eslint.org) (with
@@ -51,6 +62,7 @@ that.
 * `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin --legacy-peer-deps`
 * `npm install --save-dev stylelint --legacy-peer-deps`
 * `npm install --save-dev stylelint-config-standard --legacy-peer-deps`
+* `npm install --save-dev stylelint-config-standard-scss --legacy-peer-deps`
 
 See an [error](./docs/Error.md) I had to fix initially.
 

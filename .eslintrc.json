@@ -179,7 +179,8 @@
       "single"
     ],
     "react/react-in-jsx-scope": "off", // Not necessary in React 17
-    "react/jsx-uses-react": "off" // Not necessary in React 17
+    "react/jsx-uses-react": "off", // Not necessary in React 17
+    "react/prop-types": "off"
   },
   "root": true
 }
