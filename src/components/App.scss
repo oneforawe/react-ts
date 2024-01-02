@@ -64,7 +64,7 @@ a {
   flex-grow: 1; /* vertical expansion to fill */
   box-sizing: border-box;
   border: 60px solid d.$main-background-color;
-  background-color: tan;
+  background-color: d.$body-background-color;
   display: flex;
   flex-direction: row;
   justify-content: center;
