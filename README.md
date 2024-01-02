@@ -9,12 +9,16 @@ not necessarily executed in the order shown.
 Using a shell such as GNU Bash with [git](https://git-scm.com) and
 [node/npm/npx](https://nodejs.org) (and probably
 [nvm](https://github.com/nvm-sh/nvm)) installed, execute the following commands
-to get a copy of the repository, set it up (by installing the packages), and run
-it (in development mode).
+and instructions to get a copy of the repository, set it up (by installing the
+packages and setting the weather API key), and run it (in development mode).
 
 * `git clone https://github.com/oneforawe/react-ts.git`
 * `cd react-ts`
-* `npm install`
+* `npm install --force` (currently need to force due to linting dependency issues)
+* `cp ./src/config/secrets_template.ts ./src/config/secrets.ts` (create secrets file)
+* Optional: Set up an account with [WeatherAPI.com](https://www.weatherapi.com/),
+  get an API key, and edit the secrets file to include the API key as a string.
+  Otherwise, the weather component will not show weather reports.
 * `npm start`
 
 ## Creation of the Repo
