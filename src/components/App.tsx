@@ -17,14 +17,14 @@ export const App: React.FC = () => {
       <div className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <p>
-          Edit <code>src/components/App.tsx</code> and save to reload.
+          <code>React-TS</code> - A template for React projects written in TypeScript.
         </p>
         <a
-          href="https://reactjs.org"
+          href="https://github.com/oneforawe/react-ts"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          View Source
         </a>
       </div>
       <div className="app-body">

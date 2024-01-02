@@ -1,8 +1,8 @@
 # React-TS
 
-This is a template repository for a [React](https://react.dev) app project
-in [TypeScript](https://www.typescriptlang.org). The commands below were not
-necessarily executed in the order shown.
+This is a template repository for [React](https://react.dev) app projects
+written in [TypeScript](https://www.typescriptlang.org). The commands below were
+not necessarily executed in the order shown.
 
 ## Usage of the Repo
 
