@@ -30,7 +30,7 @@ code {
 }
 
 .app-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -42,7 +42,7 @@ code {
 
 .app-header {
   background-color: d.$main-background-color;
-  min-height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +65,7 @@ a {
   box-sizing: border-box;
   border: 60px solid d.$main-background-color;
   background-color: d.$body-background-color;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
