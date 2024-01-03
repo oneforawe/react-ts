@@ -16,25 +16,31 @@ Note: A separate user settings file can control the configuration globally for a
 user on a particular machine, and those user settings can be partly or wholy
 overridden by the workspace settings file.
 
-Relevant VSCode extensions:
+With [VSCode](https://code.visualstudio.com/) installed, you can install these
+VSCode extensions to enable linting and gain other useful features:
 
-* For UI
-  * `dbaeumer.vscode-eslint-2.2.6`
-  * `stylelint.vscode-stylelint-1.2.2`
-  * `pucelle.vscode-css-navigation-1.13.3`
-* For Markdown and Shell Scripts
-  * `davidanson.vscode-markdownlint-0.48.1`
-  * `timonwong.shellcheck-0.19.6`
-  * `ms-vscode.powershell-2022.8.5`
+* Linting
+  * `davidanson.vscode-markdownlint`
+  * `dbaeumer.vscode-eslint`
+  * `stylelint.vscode-stylelint`
+  * `timonwong.shellcheck` (not used but referenced in `settings.json`)
+  * `ms-python.pylint` (not used but referenced in `settings.json`)
 * General
-  * `eamodio.gitlens-12.2.1`
-  * `ybaumes.highlight-trailing-white-spaces-0.0.2`
-  * `compulim.indent4to2-0.1.2`
+  * `eamodio.gitlens`
+  * `ybaumes.highlight-trailing-white-spaces`
+* Recommended Miscellaneous/Utility
+  * `pucelle.vscode-css-navigation`
+  * `compulim.indent4to2`
 
 ## Running ESLint
 
-In the terminal, to run eslint on many files, change directory into the
-root project folder (`react-ts`) and run the following command:  
+In the terminal, to run eslint on many files and view issues with the files,
+change directory into the root project folder (`react-ts`) and run the following
+command:  
 `npx eslint src --ext .ts,.js,.tsx`
 
 If there are no errors or warnings, there will be no output.
+
+To actually fix, use `--fix` (or `--fix-dry-run` for a simulation). For more
+help, use `npx eslint --help` or look
+[here](https://eslint.org/docs/latest/use/command-line-interface).

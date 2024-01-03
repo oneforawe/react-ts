@@ -22,20 +22,28 @@ Note: The commands below were not necessarily executed in the order shown.
 
 ## Usage of the Repo
 
-Using a shell such as GNU Bash with [git](https://git-scm.com) and
-[node/npm/npx](https://nodejs.org) (and probably
-[nvm](https://github.com/nvm-sh/nvm)) installed, execute the following commands
-and instructions to get a copy of the repository, set it up (by installing the
-packages and setting the weather API key), and run it (in development mode).
+To run the app in this repo, use a shell such as GNU Bash with
+[git](https://git-scm.com) and [node/npm/npx](https://nodejs.org) (and probably
+[nvm](https://github.com/nvm-sh/nvm)) installed and execute the following
+instructions and commands.
 
-* `git clone https://github.com/oneforawe/react-ts.git`
-* `cd react-ts`
-* `npm install --force` (currently need to force due to linting dependency issues)
-* `cp ./src/config/secrets_template.ts ./src/config/secrets.ts` (create secrets file)
-* Optional: Set up an account with [WeatherAPI.com](https://www.weatherapi.com/),
-  get an API key, and edit the secrets file to include the API key as a string,
+* Get a local copy/clone of the repo.  
+  `git clone https://github.com/oneforawe/react-ts.git`
+* Enter the repo.  
+  `cd react-ts`
+* Install the packages.  
+  `npm install --force` (currently need to force due to linting dependency issues)
+* Create a secrets file.  
+  `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
+* Optional:  
+  Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
+  API key, and edit the secrets file to include the API key as a string,
   otherwise the weather component will not show weather reports.
-* `npm start`
+* Optional:  
+  Read the [development notes](./docs/Development.md) and install the
+  recommended VSCode extensions.
+* Run the app (in development mode).  
+  `npm start`
 
 ## Creation of the Repo
 
