@@ -6,8 +6,8 @@ extensions.
 An editor or IDE (integrated development environment) such as VSCode (aka
 "Code", Visual Studio Code from Microsoft) can perform automatic linting (syntax
 and style flagging and enforcement / correction) and type-checking, as well as
-many other things, some provided by extensions that can be installed into the
-editor.
+many other useful tasks and functionalities, some provided by extensions that
+can be installed into the editor.
 
 Included in this repo is the workspace settings (at `.vscode/settings.json`)
 that controls the configuration of VSCode while working in this repo/project.
