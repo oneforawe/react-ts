@@ -8,15 +8,16 @@ organization of code for any such React TypeScript project, using a generic
 folder structure, typescript and css/scss [code linting](./docs/Development.md)
 (geared for usage with [VSCode](https://code.visualstudio.com/)), and optional
 features such as redux state management, helper hooks for cyclic state
-refreshing, services with external API calls, and so on.  See the
-[development notes](./docs/Development.md) for tips on setting up the repo
-properly with VSCode and usage of `eslint`.
+refreshing, services with external API calls, and so on.
 
-The code design is the focus whereas the app design is not; the app is merely
-constructed to demonstrate usage of these code patterns and technologies.  See
-notes on the creation of this repo [here](./docs/Creation.md).
+See the [development notes](./docs/Development.md) for tips on setting up the
+repo properly with VSCode and usage of `eslint`.  See notes on the creation of
+this repo [here](./docs/Creation.md).
 
 ## Demo
+
+The code design is the focus whereas the app design is not; the app is merely
+constructed to demonstrate usage of these code patterns and technologies.
 
 A demo of the app can be found
 [here](https://www.andrew-forrester.com/demos/react-ts/).
