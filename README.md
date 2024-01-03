@@ -49,6 +49,8 @@ instructions and commands.
 
 ## TODO
 
+A to-do list for continuing development of this template:
+
 * Investigate changes in ESLint and dependency issues. (see relevant notes
   [here](./docs/Creation.md))
 * Investigate replacement for `craco-alias`. (see relevant notes
