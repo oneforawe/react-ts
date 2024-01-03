@@ -3,12 +3,17 @@
 This repository is a template for [React](https://react.dev) app projects
 written in [TypeScript](https://www.typescriptlang.org).
 
-The purpose of this repo is to demonstrate a particular approach and
-organization of code for any such React TypeScript project, using a generic
-folder structure, typescript and css/scss [code linting](./docs/Development.md)
-(geared for usage with [VSCode](https://code.visualstudio.com/)), and optional
-features such as redux state management, helper hooks for cyclic state
-refreshing, services with external API calls, and so on.
+The purpose of this repo is:
+
+* to function as a template to easily start new projects without re-writing
+  common "boilerplate" code and configurations,
+* to act as a reference to recall how to write certain patterns of code, and
+* to demonstrate this particular approach and organization of code for any such
+  React TypeScript project, using a generic folder structure, typescript and
+  css/scss [code linting](./docs/Development.md) (geared for usage with
+  [VSCode](https://code.visualstudio.com/)), and optional features such as redux
+  state management, helper hooks for cyclic state refreshing, services with
+  external API calls, and so on.
 
 See the [development notes](./docs/Development.md) for tips on setting up the
 repo properly with VSCode and usage of `eslint`.  See notes on the creation of
