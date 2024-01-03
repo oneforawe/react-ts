@@ -102,6 +102,11 @@ that.
 
 See an [error](./docs/Error.md) I had to fix initially.
 
+Hm, looks like
+[things are changing](https://typescript-eslint.io/blog/deprecating-formatting-rules/)
+with ESLint: deprecation of formatting rules and moving to the Stylistic
+project.  Need to investigate and change code appropriately.
+
 ### Import Aliases
 
 The packages [craco](https://craco.js.org) and
