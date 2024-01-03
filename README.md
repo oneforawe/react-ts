@@ -43,6 +43,12 @@ instructions and commands.
 * Run the app (in development mode).  
   `npm start`
 
+## TODO
+
+* Investigate changes in ESLint and dependency issues. (see below)
+* Investigate replacement for `craco-alias`. (see below)
+* Investigate possibility of putting all config files into a `.config` folder.
+
 ## Creation of the Repo
 
 Note: The commands below were not necessarily executed in the order shown.
