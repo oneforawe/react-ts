@@ -67,11 +67,11 @@ Move some packages from `dependencies` to `devDependencies`.
 
 ### Remove Warning
 
-* `npm install --save-dev @babel/plugin-proposal-private-property-in-object` (to remove a warning)
-
 See the [warning](./docs/Warning.md) I decided to fix.  (I had to add `--force`
 to the command above due to some seemingly unrelated dependency issues for
 linting.)
+
+* `npm install --save-dev @babel/plugin-proposal-private-property-in-object` (to remove a warning)
 
 ### Add-ons
 
