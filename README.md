@@ -18,8 +18,6 @@ constructed to demonstrate usage of these code patterns and technologies.
 A demo of the app can be found
 [here](https://www.andrew-forrester.com/demos/react-ts/).
 
-Note: The commands below were not necessarily executed in the order shown.
-
 ## Usage of the Repo
 
 To run the app in this repo, use a shell such as GNU Bash with
@@ -46,6 +44,8 @@ instructions and commands.
   `npm start`
 
 ## Creation of the Repo
+
+Note: The commands below were not necessarily executed in the order shown.
 
 ### Initializing
 
