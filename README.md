@@ -1,6 +1,6 @@
 # React-TS
 
-This is a template repository for [React](https://react.dev) app projects
+This repository is a template for [React](https://react.dev) app projects
 written in [TypeScript](https://www.typescriptlang.org).
 
 The purpose of this repo is to demonstrate a particular approach and
