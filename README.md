@@ -1,8 +1,24 @@
 # React-TS
 
 This is a template repository for [React](https://react.dev) app projects
-written in [TypeScript](https://www.typescriptlang.org). The commands below were
-not necessarily executed in the order shown.
+written in [TypeScript](https://www.typescriptlang.org).
+
+The purpose of this repo is to demonstrate a particular approach and
+organization of code for any such React TypeScript project, using a generic
+folder structure, typescript and css/scss [code linting](./docs/Development.md)
+(geared for usage with [VSCode](https://code.visualstudio.com/)), and optional
+features such as redux state management, helper hooks for cyclic state
+refreshing, services with external API calls, and so on.  See the
+[development notes](./docs/Development.md) for tips on setting up the repo
+properly with VSCode and usage of `eslint`.
+
+The code design is the focus whereas the app design is not; the app is merely
+constructed to demonstrate usage of these code patterns and technologies.
+
+A demo of the app can be found
+[here](https://www.andrew-forrester.com/demos/react-ts/).
+
+Note: The commands below were not necessarily executed in the order shown.
 
 ## Usage of the Repo
 
@@ -17,8 +33,8 @@ packages and setting the weather API key), and run it (in development mode).
 * `npm install --force` (currently need to force due to linting dependency issues)
 * `cp ./src/config/secrets_template.ts ./src/config/secrets.ts` (create secrets file)
 * Optional: Set up an account with [WeatherAPI.com](https://www.weatherapi.com/),
-  get an API key, and edit the secrets file to include the API key as a string.
-  Otherwise, the weather component will not show weather reports.
+  get an API key, and edit the secrets file to include the API key as a string,
+  otherwise the weather component will not show weather reports.
 * `npm start`
 
 ## Creation of the Repo
