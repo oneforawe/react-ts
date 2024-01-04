@@ -39,7 +39,7 @@ instructions and commands.
 * Enter the repo.  
   `cd react-ts`
 * Install the packages.  
-  `npm install --force` (currently need to force due to linting dependency issues)
+  `npm install`
 * Create a secrets file.  
   `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
 * Optional:  
