@@ -5,8 +5,8 @@ written in [TypeScript](https://www.typescriptlang.org).
 
 The purpose of this repo is:
 
-* to function as a template to easily start new projects without re-writing
-  common "boilerplate" code and configurations,
+* to act as a template to easily start new projects without re-writing common
+  "boilerplate" code and configurations,
 * to act as a reference to recall how to write certain patterns of code, and
 * to demonstrate this particular approach and organization of code for any such
   React TypeScript project, using a generic folder structure, typescript and
