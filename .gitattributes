@@ -134,7 +134,9 @@ browserslist      text eol=lf
 Makefile          text eol=lf
 makefile          text eol=lf
 # Fixes syntax highlighting on GitHub to allow comments
-tsconfig.json     text eol=lf linguist-language=JSON-with-Comments
+*config.json      text eol=lf linguist-language=JSON-with-Comments
+*config.*.json    text eol=lf linguist-language=JSON-with-Comments
+*rc.json          text eol=lf linguist-language=JSON-with-Comments
 
 # Docker
 Dockerfile        text eol=lf

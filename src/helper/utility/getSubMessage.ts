@@ -1,5 +1,5 @@
 interface ObjectWithMessage {
-  message: unknown, // the "sub-message" of the object
+  message: unknown; // the "sub-message" of the object
 }
 
 // hasSubMessage = hasMessageProperty

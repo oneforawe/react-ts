@@ -2,7 +2,7 @@ import { DateTime, Zone } from 'luxon';
 
 
 export interface Props {
-  zone?: Zone<true>,
+  zone?: Zone<true>;
 }
 
 

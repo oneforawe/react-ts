@@ -1,4 +1,4 @@
 export type ErrLoad = {
-  loading: boolean,
-  error:   string | null,
+  loading: boolean;
+  error:   string | null;
 };

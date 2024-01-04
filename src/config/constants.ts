@@ -12,8 +12,8 @@ export const weather = {
   // refetch for failed fetches
   refetch: {
     quickEpiCycle: {
-      triesMax        : 3,
-      periodInSeconds : (2 * seconds),
+      triesMax:        3,
+      periodInSeconds: (2 * seconds),
     },
     slowMajorCycle: {
       periodInSeconds: (30 * seconds),
@@ -21,8 +21,8 @@ export const weather = {
   },
   // refresh for updating weather info
   refresh: {
-    updatePeriodInMinutes : refreshPeriodInMinutes,
-    updatePeriodUnits     : refreshPeriodUnits,
-    interval              : refreshInterval,
+    updatePeriodInMinutes: refreshPeriodInMinutes,
+    updatePeriodUnits:     refreshPeriodUnits,
+    interval:              refreshInterval,
   },
 };

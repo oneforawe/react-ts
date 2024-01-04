@@ -1,4 +1,6 @@
-# Warning
+# Warnings
+
+## Babel
 
 When compiling a build (and sometimes when running the app in development mode),
 a warning comes up advising to declare and add a package as an explicit
@@ -32,10 +34,19 @@ So this package has been added:
 
 * `> npm install --save-dev @babel/plugin-proposal-private-property-in-object`
 
-(The `--force` option was added to the command above to overcome some seemingly
-unrelated dependency issues for linting.)
+Originally, the `--force` option was added to the command above to overcome some
+seemingly unrelated dependency issues for linting (see Dependency Issues below).
+But then, after getting rid of those dependency issues (at least temporarily),
+installing again showed the following message:
 
-## More Detail
+```(text)
+npm WARN deprecated @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+```
+
+This message is expected and irrelevant because the fundamental issue is lack of
+maintenance and explicitly declaring this unmaintained dependency.
+
+### Dependency Issues
 
 The installation was forced with this command
 
@@ -123,3 +134,67 @@ npm ERR! /Users/<username>/.npm/_logs/2024-01-02T18_43_00_332Z-eresolve-report.t
 
 npm ERR! A complete log of this run can be found in: /Users/<username>/.npm/_logs/2024-01-02T18_43_00_332Z-debug-0.log
 ```
+
+## Linting
+
+I initially stated that "Code-linting with [ESLint](https://eslint.org) (with
+[typescript-eslint](https://typescript-eslint.io)) and
+[Stylelint](https://stylelint.io) is great."
+
+Then I found that
+[things are changing](https://typescript-eslint.io/blog/deprecating-formatting-rules/)
+with ESLint: deprecation of formatting rules and moving to the Stylistic
+project.  So I then needed to investigate and change code appropriately.
+
+As they were initially installed:
+
+* `npm install --save-dev eslint`
+* `npm install --save-dev eslint-plugin-react`
+* `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin --legacy-peer-deps`
+* `npm install --save-dev stylelint --legacy-peer-deps`
+* `npm install --save-dev stylelint-config-standard --legacy-peer-deps`
+* `npm install --save-dev stylelint-config-standard-scss --legacy-peer-deps`
+
+See an [error](./Error.md) I had to fix initially when trying to install
+`eslint-config-react-app`.
+
+And working to revise with [ESLint Stylistic](https://eslint.style/)...
+Uninstalling:
+
+* `npm uninstall eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin stylelint stylelint-config-standard stylelint-config-standard-scss`
+
+And installing (and setting versions in order to avoid dependency issues):
+
+* `npm install --save-dev eslint`
+* `npm install --save-dev @typescript-eslint/eslint-plugin@^5.5.0`
+* `npm install --save-dev @typescript-eslint/parser@^5.0.0`
+* `npm install --save-dev eslint-plugin-react`
+* `npm install --save-dev @stylistic/eslint-plugin`
+* `npm install --save-dev stylelint`
+* `npm install --save-dev stylelint-config-standard`
+* `npm install --save-dev stylelint-config-standard-scss`
+
+## Craco
+
+I initially stated that "The packages [craco](https://craco.js.org) and
+[craco-alias](https://github.com/risen228/craco-alias) enable import aliases
+and abbreviations and generally enable more concise import statements."
+
+But I found that `craco-alias` is deprecated; needed to switch to
+[react-app-alias](https://github.com/oklas/react-app-alias) instead.
+
+As they were initially installed:
+
+* `npm install @craco/craco`
+* `npm install --save-dev craco-alias`
+* new file: `craco.config.js`
+* new file: `tsconfig.paths.json`
+* modified: `tsconfig.json`
+
+And working to revise with `react-app-alias`...
+
+* `npm install --save-dev @craco/craco`
+* `npm install --save-dev react-app-alias`
+* new file: `craco.config.js`
+* new file: `tsconfig.paths.json`
+* modified: `tsconfig.json`

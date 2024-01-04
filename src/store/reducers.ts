@@ -5,9 +5,9 @@ import { slice as counterSlice } from './slices/counter';
 
 
 const reducer = combineReducers({
-  dateTime : dateTimeSlice.reducer,
-  weather  : weatherSlice.reducer,
-  counter  : counterSlice.reducer,
+  dateTime: dateTimeSlice.reducer,
+  weather:  weatherSlice.reducer,
+  counter:  counterSlice.reducer,
 });
 
 

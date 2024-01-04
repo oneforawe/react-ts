@@ -4,23 +4,10 @@
     "node": true,
     "es2021": true
   },
-  "globals": {
-    "require": true
-  },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended"
-  ],
-  "overrides": [
-    {
-      "files": [
-        "*.js"
-      ],
-      "rules": {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -31,24 +18,27 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint",
-    "react"
+    "@typescript-eslint", // from package @typescript-eslint/eslint-plugin
+    "react",              // from package eslint-plugin-react
+    "@stylistic"          // from package @stylistic/eslint-plugin
   ],
   "settings": {
     "react": {
       "version": "detect"
     }
   },
+  "globals": {
+    "require": true
+  },
   "rules": {
-    "linebreak-style": [
+    "@stylistic/linebreak-style": [
       "error",
       "unix"
     ],
-    "no-trailing-spaces": [
+    "@stylistic/no-trailing-spaces": [
       "error"
     ],
-    "indent": "off",
-    "@typescript-eslint/indent": [
+    "@stylistic/indent": [
       "error",
       2,
       {
@@ -61,58 +51,55 @@
         ]
       }
     ],
-    "eol-last": [
+    "@stylistic/eol-last": [
       "error"
     ],
-    "semi": "off",
-    "@typescript-eslint/semi": [
+    "@stylistic/semi": [
       "error"
     ],
-    "semi-spacing": [
+    "@stylistic/semi-spacing": [
       "error",
       {
         "before": false,
         "after": true
       }
     ],
-    "comma-spacing": "off",
-    "@typescript-eslint/comma-spacing": [
+    "@stylistic/comma-spacing": [
       "error",
       {
         "before": false,
         "after": true
       }
     ],
-    "comma-dangle": [
+    "@stylistic/comma-dangle": [
       "error",
       "always-multiline"
     ],
-    "@typescript-eslint/member-delimiter-style": [
+    "@stylistic/member-delimiter-style": [
       "error",
       {
         "singleline": {
-          "delimiter": "comma",
+          "delimiter": "semi",
           "requireLast": false
         },
         "multiline": {
-          "delimiter": "comma",
+          "delimiter": "semi",
           "requireLast": true
         },
         "multilineDetection": "brackets"
       }
     ],
-    "block-spacing": [
+    "@stylistic/block-spacing": [
       "error"
     ],
-    "space-before-blocks": [
+    "@stylistic/space-before-blocks": [
       "error",
       "always"
     ],
-    "keyword-spacing": "off",
-    "@typescript-eslint/keyword-spacing": [
+    "@stylistic/keyword-spacing": [
       "error"
     ],
-    "space-before-function-paren": [
+    "@stylistic/space-before-function-paren": [
       "error",
       {
         "anonymous": "always",
@@ -120,18 +107,18 @@
         "asyncArrow": "always"
       }
     ],
-    "func-call-spacing": [
+    "@stylistic/func-call-spacing": [
       "error",
       "never"
     ],
-    "arrow-spacing": [
+    "@stylistic/arrow-spacing": [
       "error",
       {
         "before": true,
         "after": true
       }
     ],
-    "@typescript-eslint/type-annotation-spacing": [
+    "@stylistic/type-annotation-spacing": [
       "error",
       {
         "before": true,
@@ -144,20 +131,18 @@
         }
       }
     ],
-    "brace-style": "off",
-    "@typescript-eslint/brace-style": [
+    "@stylistic/brace-style": [
       "error",
       "stroustrup",
       {
         "allowSingleLine": true
       }
     ],
-    "object-curly-spacing": "off",
-    "@typescript-eslint/object-curly-spacing": [
+    "@stylistic/object-curly-spacing": [
       "error",
       "always"
     ],
-    "key-spacing": [
+    "@stylistic/key-spacing": [
       "error",
       {
         "multiLine": {
@@ -165,22 +150,32 @@
           "afterColon": true
         },
         "align": {
-          "beforeColon": true,
+          "beforeColon": false,
           "afterColon": true,
-          "on": "colon"
+          "on": "value"
         }
       }
     ],
-    "space-infix-ops": [
+    "@stylistic/space-infix-ops": [
       "error"
     ],
-    "quotes": [
+    "@stylistic/quotes": [
       "error",
       "single"
     ],
-    "react/react-in-jsx-scope": "off", // Not necessary in React 17
-    "react/jsx-uses-react": "off", // Not necessary in React 17
+    "react/react-in-jsx-scope": "off", // Not necessary since React 17
+    "react/jsx-uses-react": "off",     // Not necessary since React 17
     "react/prop-types": "off"
   },
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ],
   "root": true
 }

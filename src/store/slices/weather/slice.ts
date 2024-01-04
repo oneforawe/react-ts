@@ -18,9 +18,9 @@ export const getAndSetState = createAsyncThunk(
 
 
 export const slice = createSlice({
-  name         : 'weather',
-  initialState : initialState,
-  reducers     : {
+  name:         'weather',
+  initialState: initialState,
+  reducers:     {
     setState: (_state, action: PayloadAction<T.Weather.State>) => {
       return action.payload;
     },

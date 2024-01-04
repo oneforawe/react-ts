@@ -2,7 +2,7 @@
 
 Note: The commands below were not necessarily executed in the order shown.
 
-## Initializing
+## Initialize
 
 The following commands were used to initialize the repository.
 
@@ -13,20 +13,23 @@ The following commands were used to initialize the repository.
 * `vim .gitconfig`  (add `.gitconfig` file with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
-## Reorganizing
+## Reorganize and Fix
 
 Move some packages from `dependencies` to `devDependencies`.
 
 * `npm install --save-dev @types/node @types/react @types/react-dom @types/jest`
 * `npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom`
+* `npm install --save-dev react-scripts`  
+  (`--save-dev` so can use `npm audit --omit=dev` to see cleaner audit; [reference](https://github.com/facebook/create-react-app/issues/11174))
+* `npm install --save-dev typescript@^4`  
+   (`@^4` to fix dependency issue found with `react-scripts` and, later, `craco`)
 
 ## Remove Warning
 
-See the [warning](./Warning.md) I decided to fix.  (I had to add `--force` to
-the command above due to some seemingly unrelated dependency issues for
-linting.)
+The command below was used to remove a [warning](./Warnings.md) related to
+Create-React-App and Babel.
 
-* `npm install --save-dev @babel/plugin-proposal-private-property-in-object` (to remove a warning)
+* `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
 
 ## Add-ons
 
@@ -35,47 +38,48 @@ linting.)
 * `npm install luxon` (for date-time utilities)
 * `npm install lodash` (for computational utilities)
 * `npm install axios` (for HTTP requests)
-* `npm install runtypes` (for data validation when fetching from external API)  
-  (had to use `--force` due to some seemingly unrelated dependency issues for linting)
+* `npm install runtypes` (for data validation when fetching from external API)
 
 ## Linting
 
-Code-linting with [ESLint](https://eslint.org) (with
-[typescript-eslint](https://typescript-eslint.io)) and
-[Stylelint](https://stylelint.io) is great.
+Automatic code-linting can be implemented using [ESLint](https://eslint.org)
+with [Stylistic](https://eslint.style/) and [Stylelint](https://stylelint.io),
+along with the `.vscode/settings.json`, so fixes are applied automatically each
+time a file is saved.
 
-If trying to set-up a repo like this again, you might want to try the below
-commands without the flag `--legacy-peer-deps` first to see if it works without
-that.
+I didn't use the auto-configuration and setup with `npm init @eslint/config`,
+since it had errors when it attempts to install all of the following:  
+`eslint@latest`  
+`eslint-plugin-react@latest`  
+`@typescript-eslint/eslint-plugin@latest`  
+`@typescript-eslint/parser@latest`
+
+Instead, I installed the following (setting versions in some cases to avoid
+dependency issues):
 
 * `npm install --save-dev eslint`
+* `npm install --save-dev @typescript-eslint/eslint-plugin@^5.5.0`
+* `npm install --save-dev @typescript-eslint/parser@^5.0.0`
 * `npm install --save-dev eslint-plugin-react`
-* `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin --legacy-peer-deps`
-* `npm install --save-dev stylelint --legacy-peer-deps`
-* `npm install --save-dev stylelint-config-standard --legacy-peer-deps`
-* `npm install --save-dev stylelint-config-standard-scss --legacy-peer-deps`
+* `npm install --save-dev @stylistic/eslint-plugin`
+* `npm install --save-dev stylelint`
+* `npm install --save-dev stylelint-config-standard`
+* `npm install --save-dev stylelint-config-standard-scss`
 
-See an [error](./Error.md) I had to fix initially.
-
-Hm, looks like
-[things are changing](https://typescript-eslint.io/blog/deprecating-formatting-rules/)
-with ESLint: deprecation of formatting rules and moving to the Stylistic
-project.  Need to investigate and change code appropriately.
+The approach and commands above removed some [warnings](./Warnings.md) relating
+to linting dependencies.
 
 ## Import Aliases
 
 The packages [craco](https://craco.js.org) and
-[craco-alias](https://github.com/risen228/craco-alias) enable import aliases
-and abbreviations and generally enable more concise import statements.
+[react-app-alias](https://github.com/oklas/react-app-alias) enable import
+aliases and abbreviations and generally enable more concise import statements.
 
-* `npm install @craco/craco`
-* `npm install --save-dev craco-alias`
+* `npm install --save-dev @craco/craco`
+* `npm install --save-dev react-app-alias`
 * new file: `craco.config.js`
 * new file: `tsconfig.paths.json`
 * modified: `tsconfig.json`
-
-Oh, looks like `craco-alias` is deprecated; need to use
-[react-app-alias](https://github.com/oklas/react-app-alias) instead.
 
 ## State Management
 

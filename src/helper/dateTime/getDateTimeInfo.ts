@@ -67,8 +67,8 @@ export function getDateTimeInfo (
     dateDigits,
     year,
     month,
-    day  : { dayDigits, dayOrdinalSuffix, dayOfWeek },
-    time : { timeDigits24Hr, timeDigits12Hr, amORpm },
+    day:  { dayDigits, dayOrdinalSuffix, dayOfWeek },
+    time: { timeDigits24Hr, timeDigits12Hr, amORpm },
   };
   // return dateTimeInfo;
   switch (demoSelection) {

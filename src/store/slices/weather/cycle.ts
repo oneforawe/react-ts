@@ -21,8 +21,8 @@ async function fetchNMaxTimes (
     if (attempt !== 1) {
       // Delay continuing loops to reduce load on API service.
       await setTimer({
-        durationMagnitude : config.consts.weather.refetch.quickEpiCycle.periodInSeconds,
-        units             : 'seconds',
+        durationMagnitude: config.consts.weather.refetch.quickEpiCycle.periodInSeconds,
+        units:             'seconds',
       });
     }
     // Start/Continue epi-cycle fetch attempts.
@@ -57,15 +57,15 @@ const getAndSetContentfulState = createAsyncThunk(
       if (report === null) {
         // Delay continuing epi-cycle loops to reduce load on server.
         await setTimer({
-          durationMagnitude : config.consts.weather.refetch.slowMajorCycle.periodInSeconds,
-          units             : 'seconds',
+          durationMagnitude: config.consts.weather.refetch.slowMajorCycle.periodInSeconds,
+          units:             'seconds',
         });
       }
       else {
         const info = { input, report };
         dispatch(slice.actions.setState({
-          error   : null,
-          loading : false,
+          error:   null,
+          loading: false,
           info,
         }));
       }
@@ -92,8 +92,8 @@ async function cycleRecursiveStep (
 
   // Delay loops by major refresh-cycle period to reduce load on server.
   await setTimer({
-    durationMagnitude : config.consts.weather.refresh.updatePeriodInMinutes,
-    units             : config.consts.weather.refresh.updatePeriodUnits,
+    durationMagnitude: config.consts.weather.refresh.updatePeriodInMinutes,
+    units:             config.consts.weather.refresh.updatePeriodUnits,
   });
 
   cycleRecursiveStep(dispatch, input);

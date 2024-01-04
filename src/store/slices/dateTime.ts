@@ -7,9 +7,9 @@ const initialState = helper.dateTime.stateInit;
 
 
 export const slice = createSlice({
-  name         : 'dateTime',
-  initialState : initialState,
-  reducers     : {
+  name:         'dateTime',
+  initialState: initialState,
+  reducers:     {
     setState: (_state, action: PayloadAction<T.DateTime.State>) => {
       return action.payload;
     },

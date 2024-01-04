@@ -56,8 +56,8 @@ instructions and commands.
 
 A to-do list for continuing development of this template:
 
-* Investigate changes in ESLint and dependency issues. (see relevant notes
-  [here](./docs/Creation.md))
-* Investigate replacement for `craco-alias`. (see relevant notes
-  [here](./docs/Creation.md))
+* Investigate whether these ESLint packages are still needed when stylistic is
+  used (and with `react-scripts`, which seems to already have some):  
+  `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`, and
+  `eslint-plugin-react`
 * Investigate possibility of putting all config files into a `.config` folder.

@@ -4,8 +4,8 @@ export type AvailableUnits =
   'milliseconds' | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks';
 
 interface Props {
-  units: AvailableUnits,
-  durationMagnitude: number,
+  units:             AvailableUnits;
+  durationMagnitude: number;
 }
 
 

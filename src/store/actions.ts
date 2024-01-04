@@ -4,7 +4,7 @@ import { actions as counterActions } from './slices/counter';
 
 
 export const actions = {
-  dateTime : dateTimeActions,
-  weather  : weatherActions,
-  counter  : counterActions,
+  dateTime: dateTimeActions,
+  weather:  weatherActions,
+  counter:  counterActions,
 };

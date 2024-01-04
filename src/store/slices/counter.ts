@@ -17,9 +17,9 @@ export const delayedAdd = createAsyncThunk(
 
 
 export const slice = createSlice({
-  name         : 'counter',
-  initialState : initialState,
-  reducers     : {
+  name:         'counter',
+  initialState: initialState,
+  reducers:     {
     setState: (_state, action: PayloadAction<T.Counter.State>) => {
       return action.payload;
     },
