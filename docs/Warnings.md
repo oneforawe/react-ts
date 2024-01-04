@@ -174,6 +174,19 @@ And installing (and setting versions in order to avoid dependency issues):
 * `npm install --save-dev stylelint-config-standard`
 * `npm install --save-dev stylelint-config-standard-scss`
 
+Then I thought I should investigate whether these ESLint packages are still
+needed when stylistic is used (and with `react-scripts`, which seems to already
+have some of these packages that come along):  
+`@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`, and
+`eslint-plugin-react`
+
+So I found that I could uninstall them and everything seems to still work
+properly:
+
+* `npm uninstall @typescript-eslint/eslint-plugin`
+* `npm uninstall @typescript-eslint/parser`
+* `npm uninstall eslint-plugin-react`
+
 ## Craco
 
 I initially stated that "The packages [craco](https://craco.js.org) and
@@ -198,3 +211,5 @@ And working to revise with `react-app-alias`...
 * new file: `craco.config.js`
 * new file: `tsconfig.paths.json`
 * modified: `tsconfig.json`
+
+This helped me to get rid of warnings and dependency issues too.

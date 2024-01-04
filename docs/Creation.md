@@ -57,21 +57,14 @@ since it had errors when it attempts to install all of the following:
 `@typescript-eslint/eslint-plugin@latest`  
 `@typescript-eslint/parser@latest`
 
-Instead, I installed the following (setting versions in some cases to avoid
-dependency issues):
+Some of these packages already come with `react-scripts`. Instead, I avoided
+[warnings](./Warnings.md) by installing the following:
 
 * `npm install --save-dev eslint`
-* `npm install --save-dev @typescript-eslint/eslint-plugin@^5.5.0`
-* `npm install --save-dev @typescript-eslint/parser@^5.0.0`
-* `npm install --save-dev eslint-plugin-react`
 * `npm install --save-dev @stylistic/eslint-plugin`
 * `npm install --save-dev stylelint`
 * `npm install --save-dev stylelint-config-standard`
 * `npm install --save-dev stylelint-config-standard-scss`
-
-The approach and commands above removed some [warnings](./Warnings.md) relating
-to linting dependencies that were initially present when not specifying
-versions.
 
 ## State Management
 
