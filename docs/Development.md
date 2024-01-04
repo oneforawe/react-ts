@@ -41,6 +41,6 @@ command:
 
 If there are no errors or warnings, there will be no output.
 
-To actually fix, use `--fix` (or `--fix-dry-run` for a simulation). For more
-help, use `npx eslint --help` or look
+To actually fix, use the option `--fix` with the command (or `--fix-dry-run` for
+a simulation). For more help, use `npx eslint --help` or look
 [here](https://eslint.org/docs/latest/use/command-line-interface).
