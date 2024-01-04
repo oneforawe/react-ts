@@ -13,6 +13,13 @@ The following commands were used to initialize the repository.
 * `vim .gitconfig`  (add `.gitconfig` file with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
+## Remove Warning
+
+The command below was used to remove a [warning](./Warnings.md) related to
+Create-React-App and Babel.
+
+* `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
+
 ## Reorganize and Fix
 
 Move some packages from `dependencies` to `devDependencies`.
@@ -24,21 +31,17 @@ Move some packages from `dependencies` to `devDependencies`.
 * `npm install --save-dev typescript@^4`  
    (`@^4` to fix dependency issue found with `react-scripts` and, later, `craco`)
 
-## Remove Warning
+## Import Aliases
 
-The command below was used to remove a [warning](./Warnings.md) related to
-Create-React-App and Babel.
+The packages [craco](https://craco.js.org) and
+[react-app-alias](https://github.com/oklas/react-app-alias) enable import
+aliases and abbreviations and generally enable more concise import statements.
 
-* `npm install --save-dev @babel/plugin-proposal-private-property-in-object`
-
-## Add-ons
-
-* `npm install sanitize.css` (for a preferred starting point with CSS)
-* `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
-* `npm install luxon` (for date-time utilities)
-* `npm install lodash` (for computational utilities)
-* `npm install axios` (for HTTP requests)
-* `npm install runtypes` (for data validation when fetching from external API)
+* `npm install --save-dev @craco/craco`
+* `npm install --save-dev react-app-alias`
+* new file: `craco.config.js`
+* new file: `tsconfig.paths.json`
+* modified: `tsconfig.json`
 
 ## Linting
 
@@ -67,19 +70,8 @@ dependency issues):
 * `npm install --save-dev stylelint-config-standard-scss`
 
 The approach and commands above removed some [warnings](./Warnings.md) relating
-to linting dependencies.
-
-## Import Aliases
-
-The packages [craco](https://craco.js.org) and
-[react-app-alias](https://github.com/oklas/react-app-alias) enable import
-aliases and abbreviations and generally enable more concise import statements.
-
-* `npm install --save-dev @craco/craco`
-* `npm install --save-dev react-app-alias`
-* new file: `craco.config.js`
-* new file: `tsconfig.paths.json`
-* modified: `tsconfig.json`
+to linting dependencies that were initially present when not specifying
+versions.
 
 ## State Management
 
@@ -92,6 +84,15 @@ nicely object-based with auto-complete / tab-completion capabilities.
 * `npm install @reduxjs/toolkit`
 * `npm install react-redux`
 * `npm install --save-dev @types/react-redux`
+
+## Add-ons
+
+* `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
+* `npm install sanitize.css` (for a preferred starting point with CSS)
+* `npm install luxon` (for date-time utilities)
+* `npm install lodash` (for computational utilities)
+* `npm install axios` (for HTTP requests)
+* `npm install runtypes` (for data validation when fetching from external API)
 
 ## Hosting
 
