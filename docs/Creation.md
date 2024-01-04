@@ -78,6 +78,11 @@ nicely object-based with auto-complete / tab-completion capabilities.
 * `npm install react-redux`
 * `npm install --save-dev @types/react-redux`
 
+With the code (re)organization, simple custom import statements such as the
+following can be used: `import { use, dispatch, actions } from 'store';`
+
+See more code in the repo for demonstration of usage.
+
 ## Add-ons
 
 * `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
