@@ -38,6 +38,15 @@ instructions and commands.
   `git clone https://github.com/oneforawe/react-ts.git`
 * Enter the repo.  
   `cd react-ts`
+* Create a `.gitconfig` file at the root of the repo with the following
+  content:
+
+  ```(text)
+  [core]
+    excludesfile = ./.config/.gitignore
+    attributesfile = ./.config/.gitattributes
+  ```
+
 * Install the packages.  
   `npm install --force` (currently need to force due to linting dependency issues)
 * Create a secrets file.  
@@ -56,4 +65,5 @@ instructions and commands.
 
 A to-do list for continuing development of this template:
 
-* Investigate possibility of putting all config files into a `.config` folder.
+* Investigate possibility of putting more config files (all except `.gitconfig`)
+  into the `.config` folder.
