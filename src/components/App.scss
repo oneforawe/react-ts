@@ -60,7 +60,7 @@ a {
 }
 
 .app-body {
-  min-height: '1px';
+  min-height: 1px;
   flex-grow: 1; /* vertical expansion to fill */
   box-sizing: border-box;
   border: 60px solid d.$main-background-color;

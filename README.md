@@ -65,4 +65,3 @@ A to-do list for continuing development of this template:
 
 * Investigate possibility of putting all of the config files into a `.config`
   folder.
-* Investigate whether stylelint is working properly -- looks like it isn't.

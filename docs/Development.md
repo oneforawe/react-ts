@@ -34,8 +34,6 @@ VSCode extensions to enable linting and gain other useful features:
 
 ## ESLint and Stylelint
 
-Warning: It appears that Stylelint isn't set up properly yet in this repo.
-
 Besides running ESLint and Stylelint automatically when viewing and editing
 files in VSCode, you can also run each of them in the shell/terminal.
 
@@ -44,7 +42,7 @@ change directory into the root project folder (`react-ts`) and run the following
 commands:
 
 * `npx eslint src --ext .ts,.js,.tsx`
-* `npx stylelint "**/*.{css,scss}"`
+* `npx stylelint "**/*.{css,scss}" --ignore-pattern "build/*"`
 
 If there are no errors or warnings, there will be no output.
 
