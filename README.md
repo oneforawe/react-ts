@@ -34,25 +34,25 @@ To run the app in this repo, use a shell such as GNU Bash with
 [nvm](https://github.com/nvm-sh/nvm)) installed and execute the following
 instructions and commands.
 
-* Get a local copy/clone of the repo.  
-  `git clone https://github.com/oneforawe/react-ts.git`
-* Enter the repo.  
-  `cd react-ts`
-* Install the packages.  
-  `npm install`
-* Create a secrets file.  
-  `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
-* Optional:  
-  Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
-  API key, and edit the secrets file to include the API key as a string,
-  otherwise the weather component will not show weather reports.
-* Semi-Optional:  
-  Read the [development notes](./docs/Development.md) and install the
-  recommended VSCode extensions.  (Automatic linting while editing with VSCode
-  and its extensions is part of the point of this repo, though the code will run
-  without installing the extensions.)
-* Run the app (in development mode).  
-  `npm start`
+1. Get a local copy/clone of the repo.  
+   `git clone https://github.com/oneforawe/react-ts.git`
+2. Enter the repo.  
+   `cd react-ts`
+3. Install the packages.  
+   `npm install`
+4. Create a secrets file.  
+   `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
+5. Optional:  
+   Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
+   API key, and edit the secrets file to include the API key as a string,
+   otherwise the weather component will not show weather reports.
+6. Semi-Optional:  
+   Read the [development notes](./docs/Development.md) and install the
+   recommended VSCode extensions.  (Automatic linting while editing with VSCode
+   and its extensions is part of the point of this repo, though the code will
+   run without installing the extensions.)
+7. Run the app (in development mode).  
+   `npm start`
 
 ## TODO
 
