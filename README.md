@@ -16,8 +16,8 @@ The purpose of this repo is:
   external API calls, and so on.
 
 See the [development notes](./docs/Development.md) for tips on setting up the
-repo properly with VSCode and usage of `eslint`.  See notes on the creation of
-this repo [here](./docs/Creation.md).
+repo properly with VSCode and usage of `eslint` and `stylelint`.  See notes on
+the creation of this repo [here](./docs/Creation.md).
 
 ## Demo
 
@@ -65,3 +65,4 @@ A to-do list for continuing development of this template:
 
 * Investigate possibility of putting all of the config files into a `.config`
   folder.
+* Investigate whether stylelint is working properly -- looks like it isn't.
