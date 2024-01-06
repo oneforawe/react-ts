@@ -38,15 +38,9 @@ instructions and commands.
   `git clone https://github.com/oneforawe/react-ts.git`
 * Enter the repo.  
   `cd react-ts`
-* Create a `.gitconfig` file at the root of the repo with the following
-  content:
-
-  ```(text)
-  [core]
-    excludesfile = ./.config/.gitignore
-    attributesfile = ./.config/.gitattributes
-  ```
-
+* Create a `.gitconfig` file at the root of the repo and activate it.  
+  `cp ./.config/.gitconfig_sample ./.gitconfig`  
+  `git status` (this will refresh git and activate the config)
 * Install the packages.  
   `npm install --force` (currently need to force due to linting dependency issues)
 * Create a secrets file.  
