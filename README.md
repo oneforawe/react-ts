@@ -46,9 +46,11 @@ instructions and commands.
   Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
   API key, and edit the secrets file to include the API key as a string,
   otherwise the weather component will not show weather reports.
-* Optional:  
+* Semi-Optional:  
   Read the [development notes](./docs/Development.md) and install the
-  recommended VSCode extensions.
+  recommended VSCode extensions.  (Automatic linting while editing with VSCode
+  and its extensions is part of the point of this repo, though the code will run
+  without installing the extensions.)
 * Run the app (in development mode).  
   `npm start`
 
