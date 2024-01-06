@@ -27,7 +27,7 @@ constructed to demonstrate usage of these code patterns and technologies.
 A demo of the app can be found
 [here](https://www.andrew-forrester.com/demos/react-ts/).
 
-## Usage of the Repo
+## Usage
 
 To run the app in this repo, use a shell such as GNU Bash with
 [git](https://git-scm.com) and [node/npm/npx](https://nodejs.org) (and probably
@@ -54,7 +54,10 @@ instructions and commands.
 7. Run the app (in development mode).  
    `npm start`
 
-## TODO
+Once everything is set up properly, the `.git` folder can be deleted and a new
+repo/project can be created from this template.
+
+## To Do
 
 A to-do list for continuing development of this template:
 
