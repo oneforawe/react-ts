@@ -32,7 +32,7 @@ A demo of the app can be found
 To use this repo as a template starting point for your own project, first you
 will get this repo set up properly to run the app.  And once the app can run and
 you can verify that automatic linting is enabled in VSCode, you can delete the
-`.git` folder and a new repo/project can be initialized from this template.
+`.git` folder and initialize a new repo/project from this template.
 
 To run the app in this repo, use a shell such as GNU Bash with
 [git](https://git-scm.com) and [node/npm/npx](https://nodejs.org) (and probably
