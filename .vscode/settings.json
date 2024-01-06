@@ -5,7 +5,6 @@
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "stylelint.validate": ["css", "scss"],
   "[python]": {
     "editor.tabSize": 4,
     "editor.formatOnSave": true
@@ -19,8 +18,9 @@
       "source.fixAll.eslint": "explicit"
     },
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "stylelint.validate": ["css", "scss"],
   "[css][scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
     "editor.codeActionsOnSave": {
