@@ -1,0 +1,3 @@
+[core]
+  excludesfile = ./.config/.gitignore
+  attributesfile = ./.config/.gitattributes
