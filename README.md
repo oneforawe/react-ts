@@ -68,5 +68,5 @@ A to-do list for continuing development of this template:
 
 * Investigate adding style/format linting for css/scss, since stylelint no
   longer provides that kind of linting.
-* Investigate possibility of putting all of the config files into a `.config`
-  folder.
+* Investigate possibility of putting the remaining config files into the
+  `.config` folder.
