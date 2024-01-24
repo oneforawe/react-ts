@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
+  "cracoConfig": ".config/craco.config.js",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
