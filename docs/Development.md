@@ -32,15 +32,25 @@ VSCode extensions to enable linting and gain other useful features:
   * `pucelle.vscode-css-navigation`
   * `compulim.indent4to2`
 
-## Running ESLint
+## ESLint and Stylelint
 
-In the terminal, to run eslint on many files and view issues with the files,
+Besides running ESLint and Stylelint automatically when viewing and editing
+files in VSCode, you can also run each of them in the shell/terminal.
+
+In the terminal, to run linting on many files and view issues with the files,
 change directory into the root project folder (`react-ts`) and run the following
-command:  
-`npx eslint src --ext .ts,.js,.tsx`
+commands:
+
+* `npx eslint src --ext .ts,.js,.tsx`
+* `npx stylelint "**/*.{css,scss}" --ignore-pattern "build/*"`
 
 If there are no errors or warnings, there will be no output.
 
-To actually fix, use the option `--fix` with the command (or `--fix-dry-run` for
-a simulation). For more help, use `npx eslint --help` or look
-[here](https://eslint.org/docs/latest/use/command-line-interface).
+To actually fix, use the option `--fix` with a command.  (With ESLint you can
+also use `--fix-dry-run` for a simulation).
+
+For more help:
+
+* ESLint: use `npx eslint --help` or look
+  [here](https://eslint.org/docs/latest/use/command-line-interface).
+* Stylelint: see more options [here](https://stylelint.io/user-guide/options/).

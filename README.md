@@ -5,8 +5,8 @@ written in [TypeScript](https://www.typescriptlang.org).
 
 The purpose of this repo is:
 
-* to function as a template to easily start new projects without re-writing
-  common "boilerplate" code and configurations,
+* to act as a template to easily start new projects without re-writing common
+  "boilerplate" code and configurations,
 * to act as a reference to recall how to write certain patterns of code, and
 * to demonstrate this particular approach and organization of code for any such
   React TypeScript project, using a generic folder structure, typescript and
@@ -16,8 +16,8 @@ The purpose of this repo is:
   external API calls, and so on.
 
 See the [development notes](./docs/Development.md) for tips on setting up the
-repo properly with VSCode and usage of `eslint`.  See notes on the creation of
-this repo [here](./docs/Creation.md).
+repo properly with VSCode and usage of `eslint` and `stylelint`.  See notes on
+the creation of this repo [here](./docs/Creation.md).
 
 ## Demo
 
@@ -27,37 +27,46 @@ constructed to demonstrate usage of these code patterns and technologies.
 A demo of the app can be found
 [here](https://www.andrew-forrester.com/demos/react-ts/).
 
-## Usage of the Repo
+## Usage
+
+To use this repo as a template starting point for your own project, first you
+will get this repo set up properly to run the app.  And once the app can run and
+you can verify that automatic linting is enabled in VSCode, you can delete the
+`.git` folder and initialize a new repo/project from this template.
 
 To run the app in this repo, use a shell such as GNU Bash with
 [git](https://git-scm.com) and [node/npm/npx](https://nodejs.org) (and probably
 [nvm](https://github.com/nvm-sh/nvm)) installed and execute the following
 instructions and commands.
 
-* Get a local copy/clone of the repo.  
-  `git clone https://github.com/oneforawe/react-ts.git`
-* Enter the repo.  
-  `cd react-ts`
-* Create a `.gitconfig` file at the root of the repo and activate it.  
-  `cp ./.config/.gitconfig_sample ./.gitconfig`  
-  `git status` (this will refresh git and activate the config)
-* Install the packages.  
-  `npm install --force` (currently need to force due to linting dependency issues)
-* Create a secrets file.  
-  `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
-* Optional:  
-  Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
-  API key, and edit the secrets file to include the API key as a string,
-  otherwise the weather component will not show weather reports.
-* Optional:  
-  Read the [development notes](./docs/Development.md) and install the
-  recommended VSCode extensions.
-* Run the app (in development mode).  
-  `npm start`
+1. Get a local copy/clone of the repo.  
+   `git clone https://github.com/oneforawe/react-ts.git`
+2. Enter the repo.  
+   `cd react-ts`
+3. Create a `.gitconfig` file at the root of the repo and activate it.  
+   `cp ./.config/.gitconfig_sample ./.gitconfig`  
+   `git status` (this will refresh git and activate the config)
+4. Install the packages.  
+   `npm install`
+5. Create a secrets file.  
+   `cp ./src/config/secrets_template.ts ./src/config/secrets.ts`
+6. Optional:  
+   Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
+   API key, and edit the secrets file to include the API key as a string,
+   otherwise the weather component will not show weather reports.
+7. Semi-Optional:  
+   Read the [development notes](./docs/Development.md) and install the
+   recommended VSCode extensions.  (Automatic linting while editing with VSCode
+   and its extensions is part of the point of this repo, though the code will
+   run without installing the extensions.)
+8. Run the app (in development mode).  
+   `npm start`
 
-## TODO
+## To Do
 
 A to-do list for continuing development of this template:
 
-* Investigate possibility of putting more config files (all except `.gitconfig`)
-  into the `.config` folder.
+* Investigate adding style/format linting for css/scss, since stylelint no
+  longer provides that kind of linting.
+* Investigate possibility of putting all of the config files into a `.config`
+  folder.

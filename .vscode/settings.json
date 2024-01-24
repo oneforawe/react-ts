@@ -18,9 +18,11 @@
       "source.fixAll.eslint": "explicit"
     },
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "stylelint.validate": ["css", "scss"],
   "[css][scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
