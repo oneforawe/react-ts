@@ -36,9 +36,15 @@ Move some packages from `dependencies` to `devDependencies`.
 The packages [craco](https://craco.js.org) and
 [react-app-alias](https://github.com/oklas/react-app-alias) enable import
 aliases and abbreviations and generally enable more concise import statements.
+These packages need additional `json5` support so the `tsconfig.json` (a JSON5
+file with comments) does not have syntax errors due to the comments and other
+differences from the normal JSON syntax.
 
 * `npm install --save-dev @craco/craco`
+* `npm install --save-dev @craco/types`
 * `npm install --save-dev react-app-alias`
+* `npm install --save-dev json5`
+* `npm install --save-dev @types/json5`
 * new file: `craco.config.js`
 * new file: `tsconfig.paths.json`
 * modified: `tsconfig.json`

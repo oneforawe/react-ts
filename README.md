@@ -63,7 +63,6 @@ instructions and commands.
 
 A to-do list for continuing development of this template:
 
-* Fix issue: No longer compiling with comments in `tsconfig.json`.
 * Investigate adding style/format linting for css/scss, since stylelint no
   longer provides that kind of linting.
 * Investigate possibility of putting all of the config files into a `.config`
