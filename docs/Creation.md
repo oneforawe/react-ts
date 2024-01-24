@@ -44,7 +44,6 @@ differences from the normal JSON syntax.
 * `npm install --save-dev @craco/types`
 * `npm install --save-dev react-app-alias`
 * `npm install --save-dev json5`
-* `npm install --save-dev @types/json5`
 * new file: `craco.config.js`
 * new file: `tsconfig.paths.json`
 * modified: `tsconfig.json`
