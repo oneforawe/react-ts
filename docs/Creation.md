@@ -10,7 +10,7 @@ The following commands were used to initialize the repository.
 * `cd react-ts`
 * `rm tsconfig.json && npx tsc --init`  (get more-commented file, meld with original)
 * `git init`
-* `vim .gitconfig`  (add `.gitconfig` file with appropriate user/author)
+* `vim .gitconfig`  (add file `.gitconfig` with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
 ## Remove Warning
@@ -89,6 +89,37 @@ following can be used:
 
 See more code in the repo for demonstration of usage.
 
+## Config Folder
+
+* modified: `.gitconfig`  
+  Added core properties
+
+  ```(text)
+  [core]
+    excludesfile = ./.config/.gitignore
+    attributesfile = ./.config/.gitattributes
+  ```
+
+  to move git excludes/ignore and git attributes files into config folder.
+  (Note that the git attributes file seems to work from within the config folder
+  except when applying an automatic fix to incorrect file line endings. See the
+  usage steps in the repo README for more information on that, as well as the
+  `.gitconfig_temp` file noted below.)
+* modified: `package.json`  
+  Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
+  into the config folder.
+* modified: `tsconfig.json`  
+  Changed "extends" property to `"extends": "./.config/tsconfig.paths.json",`
+  to move the paths aliases into the config folder.
+* Added: `.gitconfig_sample`  
+  Added default git config file for easy copying since the active git config
+  file at the project root cannot be included in the repo, since for the
+  repo author it contains credentials information. (Maybe the git config could
+  refer to a separate credentials file; that would simplify files and steps.)
+* Added: `.gitconfig_temp`  
+  Added temporary git config file for usage when fixing incorrect file line
+  endings.
+
 ## Add-ons
 
 * `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
@@ -97,6 +128,12 @@ See more code in the repo for demonstration of usage.
 * `npm install lodash` (for computational utilities)
 * `npm install axios` (for HTTP requests)
 * `npm install runtypes` (for data validation when fetching from external API)
+
+## App Src
+
+The code in the `src` folder was developed from the starting point provided by
+create-react-app (the first initializing command) to its current state as the
+above steps were taken to hone the project.
 
 ## Hosting
 
