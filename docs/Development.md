@@ -3,11 +3,13 @@
 This repo is designed for usage with the following IDE, configurations, and
 extensions.
 
-An editor or IDE (integrated development environment) such as VSCode (aka
-"Code", Visual Studio Code from Microsoft) can perform automatic linting (syntax
-and style flagging and enforcement / correction) and type-checking, as well as
-many other useful tasks and functionalities, some provided by extensions that
-can be installed into the editor.
+An editor or IDE (integrated development environment) such as
+[VSCode](https://code.visualstudio.com/) (aka "Code", Visual Studio Code from
+Microsoft) can perform automatic linting (syntax and style flagging and
+enforcement / correction) and type-checking, as well as many other useful tasks
+and functionalities, some provided by
+[extensions](https://code.visualstudio.com/docs/editor/extension-marketplace)
+that can be installed into the editor.
 
 Included in this repo is the workspace settings (at `.vscode/settings.json`)
 that controls the configuration of VSCode while working in this repo/project.
@@ -16,8 +18,8 @@ Note: A separate user settings file can control the configuration globally for a
 user on a particular machine, and those user settings can be partly or wholy
 overridden by the workspace settings file.
 
-With [VSCode](https://code.visualstudio.com/) installed, you can install these
-VSCode extensions to enable linting and gain other useful features:
+With VSCode installed, you can install these VSCode extensions to enable linting
+and gain other useful features:
 
 * Linting
   * `davidanson.vscode-markdownlint`
