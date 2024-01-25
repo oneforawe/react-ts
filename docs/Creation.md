@@ -46,7 +46,9 @@ differences from the normal JSON syntax.
 * `npm install --save-dev json5`
 * new file: `craco.config.js`
 * new file: `tsconfig.paths.json`
-* modified: `tsconfig.json`
+* modified: `tsconfig.json`  
+  Added "extends" property to refer to `tsconfig.paths.json` for path aliases.
+  Uncomment the `"baseUrl": "./src",` line to resolve non-relative import paths.
 
 ## Linting
 
@@ -72,24 +74,6 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 * `npm install --save-dev stylelint`
 * `npm install --save-dev stylelint-config-standard`
 * `npm install --save-dev stylelint-config-standard-scss`
-
-## State Management
-
-In case Redux state management is desired (and isn't overkill) the
-[reactjs/toolkit](https://redux-toolkit.js.org/introduction/getting-started)
-and [react-redux](https://react-redux.js.org) packages are used and the
-infrastructure is (re)organized so import statements are concise and usage is
-nicely object-based with auto-complete / tab-completion capabilities.
-
-* `npm install @reduxjs/toolkit`
-* `npm install react-redux`
-* `npm install --save-dev @types/react-redux`
-
-With the code (re)organization, simple custom import statements such as the
-following can be used:  
-`import { use, dispatch, actions } from 'store';`
-
-See more code in the repo for demonstration of usage.
 
 ## Config Folder
 
@@ -121,6 +105,24 @@ See more code in the repo for demonstration of usage.
 * new file: `.gitconfig_temp`  
   Added temporary git config file for usage when fixing incorrect file line
   endings.
+
+## State Management
+
+In case Redux state management is desired (and isn't overkill) the
+[reactjs/toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+and [react-redux](https://react-redux.js.org) packages are used and the
+infrastructure is (re)organized so import statements are concise and usage is
+nicely object-based with auto-complete / tab-completion capabilities.
+
+* `npm install @reduxjs/toolkit`
+* `npm install react-redux`
+* `npm install --save-dev @types/react-redux`
+
+With the code (re)organization, simple custom import statements such as the
+following can be used:  
+`import { use, dispatch, actions } from 'store';`
+
+See more code in the repo for demonstration of usage.
 
 ## Add-ons
 
