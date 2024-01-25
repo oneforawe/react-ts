@@ -1,3 +1,16 @@
+# References:
+# https://git-scm.com/docs/gitattributes/
+# https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
+# Useful Commands:
+# * View the line-endings for files (index version, working tree version, & attributes specifications):
+#   > git ls-files --eol
+# * Force the files to match the .gitattributes specifications file:
+#   [TODO: Add confirmed commands here; see react-ts README usage steps for
+#    special case of accomplishing this task.]
+
+
+
 # Source:
 # https://github.com/gitattributes/gitattributes/blob/master/Web.gitattributes
 # Edited.
