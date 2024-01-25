@@ -1,0 +1,5 @@
+# This file is for following steps to fix incorrect file line-endings.
+[core]
+  excludesfile = ./.config/.gitignore
+  #attributesfile = ./.config/.gitattributes
+  attributesfile = ./.gitattributes
