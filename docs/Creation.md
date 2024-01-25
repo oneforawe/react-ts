@@ -77,6 +77,11 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 
 ## Config Folder
 
+Some of the config files have been moved into a config folder to reduce the
+clutter at the root of the repo.  This may cause issues and so the config files
+may later be moved back to the root.  (See below for an issue that requires
+temporary shuffling of the git attributes file.)
+
 * modified: `.gitconfig`  
   Added core properties
 
@@ -87,10 +92,10 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
   ```
 
   to move git excludes/ignore and git attributes files into config folder.
-  (Note that the git attributes file seems to work from within the config folder
-  except when applying an automatic fix to incorrect file line endings. See the
-  usage steps in the repo README for more information on that, as well as the
-  `.gitconfig_temp` file noted below.)
+      * Issue: Note that the git attributes file seems to work from within the
+        config folder except when applying an automatic fix to incorrect file
+        line endings. See the usage steps in the repo README for more
+        information on that, as well as the `.gitconfig_temp` file noted below.
 * modified: `package.json`  
   Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
   into the config folder.
@@ -104,7 +109,8 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
   refer to a separate credentials file; that would simplify files and steps.)
 * new file: `.gitconfig_temp`  
   Added temporary git config file for usage when fixing incorrect file line
-  endings.
+  endings, coupled with creating a temporary copy of the git attributes file at
+  the root of the repo while executing the fix.
 
 ## State Management
 
