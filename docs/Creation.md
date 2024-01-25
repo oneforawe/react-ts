@@ -94,10 +94,10 @@ elsewhere, either at the root or in the `.vscode` folder.
   ```
 
   to move git excludes/ignore and git attributes files into config folder.
-      * Issue: Note that the git attributes file seems to work from within the
-        config folder except when applying an automatic fix to incorrect file
-        line endings. See the usage steps in the repo README for more
-        information on that, as well as the `.gitconfig_temp` file noted below.
+  * Issue: Note that the git attributes file seems to work from within the
+    config folder except when applying an automatic fix to incorrect file line
+    endings. See the usage steps in the repo README for more information on
+    that, as well as the `.gitconfig_temp` file noted below.
 * modified: `package.json`  
   Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
   into the config folder.
