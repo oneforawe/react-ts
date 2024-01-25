@@ -36,8 +36,9 @@ and gain other useful features:
 
 ## ESLint and Stylelint
 
-Besides running ESLint and Stylelint automatically when viewing and editing
-files in VSCode, you can also run each of them in the shell/terminal.
+Besides running [ESLint](https://eslint.org/) and
+[Stylelint](https://stylelint.io/) automatically when viewing and editing files
+in VSCode, you can also run each of them in the shell/terminal.
 
 In the terminal, to run linting on many files and view issues with the files,
 change directory into the root project folder (`react-ts`) and run the following
