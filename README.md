@@ -147,5 +147,11 @@ A to-do list for continuing development of this template:
 
 * Investigate adding style/format linting for css/scss, since stylelint no
   longer provides that kind of linting.
-* Investigate possibility of putting the remaining config files into the
-  `.config` folder.
+* Investigate possibility of putting the remaining config files into the config
+  folder.
+* Investigate having the git config file refer to a separate credentials file;
+  that would simplify files and steps.
+* Investigate simplifying the process to automatically fix file-line-endings,
+  especially forcing git to use the attributes file in the config folder and
+  seeing if `git add --renormalize .` can work; that would simplify files and
+  steps.

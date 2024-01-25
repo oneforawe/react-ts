@@ -107,8 +107,9 @@ elsewhere, either at the root or in the `.vscode` folder.
 * new file: `.gitconfig_sample`  
   Added default git config file for easy copying since the active git config
   file at the project root cannot be included in the repo, since for the
-  repo author it contains credentials information. (Maybe the git config could
-  refer to a separate credentials file; that would simplify files and steps.)
+  repo author it contains credentials information. (TODO: Maybe the git config
+  could refer to a separate credentials file; that would simplify files and
+  steps.)
 * new file: `.gitconfig_temp`  
   Added temporary git config file for usage when fixing incorrect file line
   endings, coupled with creating a temporary copy of the git attributes file at
