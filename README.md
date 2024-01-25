@@ -108,12 +108,13 @@ are installed and execute the following instructions and commands.
         You can confirm the fix of the line endings with  
         `git ls-files --stage --abbrev --eol`  
         or by following the next step.
-    5. Open a repo file in VSCode (especially if you suspect it has incorrect
-        line endings) and examine the line-ending indicator in the lower right
-        corner of the window (which you can click-on to change a file's line
-        endings, if you need to).  
-        Specifically, open the (ignored) file `src/config/secrets.ts` and change
-        it, if necessary, from "CRLF" to "LF", and save the file.
+    5. Open the repo root folder `react-ts` in VSCode and select a file to view
+        (especially if you suspect it has incorrect line endings) and examine
+        the line-ending indicator in the lower right corner of the window (which
+        you can click-on to initiate a change in a file's line endings, if you
+        need to).  
+        Specifically, select the (ignored) file `src/config/secrets.ts` and
+        change it, if necessary, from "CRLF" to "LF", and save the file.
     6. You can unstage if desired: `git rm --cached -r .`
     7. Clean up the temp files and restore the git config.  
         `rm .gitattributes`  
