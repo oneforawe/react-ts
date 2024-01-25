@@ -55,6 +55,8 @@ with [Stylistic](https://eslint.style/) and [Stylelint](https://stylelint.io),
 along with the `.vscode/settings.json`, so fixes are applied automatically each
 time a file is saved.
 
+* new file: `settings.json`
+
 I didn't use the auto-configuration and setup with `npm init @eslint/config`,
 since it had errors when it attempts to install all of the following:  
 `eslint@latest`  
@@ -111,12 +113,12 @@ See more code in the repo for demonstration of usage.
 * modified: `tsconfig.json`  
   Changed "extends" property to `"extends": "./.config/tsconfig.paths.json",`
   to move the paths aliases into the config folder.
-* Added: `.gitconfig_sample`  
+* new file: `.gitconfig_sample`  
   Added default git config file for easy copying since the active git config
   file at the project root cannot be included in the repo, since for the
   repo author it contains credentials information. (Maybe the git config could
   refer to a separate credentials file; that would simplify files and steps.)
-* Added: `.gitconfig_temp`  
+* new file: `.gitconfig_temp`  
   Added temporary git config file for usage when fixing incorrect file line
   endings.
 
@@ -134,6 +136,10 @@ See more code in the repo for demonstration of usage.
 The code in the `src` folder was developed from the starting point provided by
 create-react-app (the first initializing command) to its current state as the
 above steps were taken to hone the project.
+
+## Docs
+
+Continually wrote and revised the documentation.
 
 ## Hosting
 
