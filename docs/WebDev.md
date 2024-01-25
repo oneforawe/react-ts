@@ -90,7 +90,7 @@ Developers should prefer installing Node.js using the NVM script."
 
 Note that, since it is not recommended to install nvm using a package manager
 (such as [apt](https://en.wikipedia.org/wiki/APT_(software)) for GNU/Linux or
-[Homebrew](https://brew.sh/) for MacOS) to , you'll have to take more steps
+[Homebrew](https://brew.sh/) for MacOS), you will have to take more steps
 (beyond your usual package-manager package-update steps) if you want to keep nvm,
 node, etc up-to-date.  Follow the [instructions](https://github.com/nvm-sh/nvm)
 for updating -- using the same "curl" or "wget" command to update nvm as the one
