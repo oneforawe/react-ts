@@ -154,4 +154,6 @@ A to-do list for continuing development of this template:
 * Investigate simplifying the process to automatically fix file-line-endings,
   especially forcing git to use the attributes file in the config folder and
   seeing if `git add --renormalize .` can work; that would simplify files and
-  steps.
+  steps.  See the creation notes section on the
+  [config files](./docs/Creation.md#config-folder) for more detail on this
+  issue.
