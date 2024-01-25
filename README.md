@@ -65,11 +65,11 @@ are installed and execute the following instructions and commands.
     altered, and note that an untracked `node_modules` folder is present, since
     the `.config/.gitignore` file hasn't yet been enabled with the `.gitconfig`
     file; see the next step.
-5. Reset the repo with a new custom `.gitconfig` file.
-    1. Delete the `.git` folder.  
+5. Reset the repo with a new custom git config file.
+    1. Delete the git folder.  
         For example, execute `rm -rf .git` (a bash command) or
         `Remove-Item -Recurse -Force .git` (a PowerShell command).
-    2. Create/copy the custom `.gitconfig` file at/to the root of the repo.  
+    2. Copy the custom git config file to the root of the repo.  
         `cp .config/.gitconfig_sample .gitconfig`
     3. Initialize as a new git repo.  
         `git init`
@@ -82,9 +82,8 @@ are installed and execute the following instructions and commands.
     This new secrets file will also be ignored, since it's included in the ignore
     file.
 7. Fix any incorrect file line-endings.
-    1. Use the temporary git config file `.gitconfig_temp` with a copy of the
-        `.gitattributes` file at the root of the repo to allow the following
-        steps to work properly.  
+    1. Use the temporary git config file with a copy of the git attributes file
+        at the root of the repo to allow the following steps to work properly.  
         `rm .gitconfig`  
         `cp .config/.gitconfig_temp .gitconfig`  
         `cp .config/.gitattributes .gitattributes`
@@ -109,14 +108,15 @@ are installed and execute the following instructions and commands.
         You can confirm the fix of the line endings with  
         `git ls-files --stage --abbrev --eol`  
         or by following the next step.
-    5. Open a repo file in VSCode (especially if you suspect it has incorrect
-        line endings) and examine the line-ending indicator in the lower right
-        corner of the window (which you can click-on to change a file's line
-        endings, if you need to).  
-        Specifically, open the (ignored) file `src/config/secrets.ts` and change
-        it, if necessary, from "CRLF" to "LF", and save the file.
+    5. Open the repo root folder `react-ts` in VSCode by executing `code .` and
+        select a file to view (especially if you suspect it has incorrect line
+        endings) and examine the line-ending indicator in the lower right corner
+        of the window (which you can click-on to initiate a change in a file's
+        line endings, if you need to).  
+        Specifically, select the (ignored) file `src/config/secrets.ts` and
+        change it, if necessary, from "CRLF" to "LF", and save the file.
     6. You can unstage if desired: `git rm --cached -r .`
-    7. Clean up the temp files and restore `.gitconfig`.  
+    7. Clean up the temp files and restore the git config.  
         `rm .gitattributes`  
         `rm .gitconfig`  
         `cp .config/.gitconfig_sample .gitconfig`  
