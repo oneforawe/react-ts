@@ -100,8 +100,8 @@ are installed and execute the following instructions and commands.
         `i/lf    w/crlf  attr/text eol=lf        .eslintrc.json`
     3. If there are no warnings, you can skip the next step.
     4. If there are warnings, you can automatically correct the files by
-        deleting all of the (non-ignored) files and then check them out from the
-        index:  
+        deleting all of the (non-ignored) files in the working tree and then
+        check them out from the index:  
         `git ls-files -z | xargs -0 rm -f`   (WARNING: UNTESTED, for Bash)  
         `git ls-files | % {Remove-Item $_}`  (for PowerShell)  
         `git checkout .`  (for both shells)  
