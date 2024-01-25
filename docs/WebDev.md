@@ -86,23 +86,22 @@ Confirmation from
 [Linuxize](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/):
 "If you need Node.js only as a local runtime for deploying Node.js applications
 then the simplest option is to install Node.js from the NodeSource repository.
-Developers should prefer installing Node.js using the NVM script."  This is
-further confirmed on
-[stackoverflow](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
-(see the 2nd "2019 update" answer).
+Developers should prefer installing Node.js using the NVM script."
 
-Note that, if not using a package manager (such as
-[apt](https://en.wikipedia.org/wiki/APT_(software)) for GNU/Linux or
-[Homebrew](https://brew.sh/) for MacOS), you may have to take more steps if you
-want to keep your software up-to-date.  For instance, you can use the same
-"curl" or "wget" command to update nvm as the one used to install it (if a newer
-file is referenced).  And you can install more versions of node+npm and switch
-between them; see `nvm --help` for more info.  Note also that your
-globally-installed packages (seen with `npm ls -g --depth 0`) will change when
-switching between versions.
+Note that, since it is not recommended to install nvm using a package manager
+(such as [apt](https://en.wikipedia.org/wiki/APT_(software)) for GNU/Linux or
+[Homebrew](https://brew.sh/) for MacOS) to , you'll have to take more steps
+(beyond your usual package-manager package-update steps) if you want to keep nvm,
+node, etc up-to-date.  Follow the [instructions](https://github.com/nvm-sh/nvm)
+for updating -- using the same "curl" or "wget" command to update nvm as the one
+used to install it (if a newer file is referenced).  And you can install more
+versions of node+npm and switch between them; see `nvm --help` for more info.
+Note also that your globally-installed packages (seen with `npm ls -g --depth 0`)
+will change when switching between versions.
 
-(Also, for your information, if you're using MacOS with Homebrew, `brew doctor`
-will give a long warning about node, but that warning can just be ignored.)
+(Also, for your information, if you're using MacOS with Homebrew, and have
+installed with Homebrew -- as *not* recommended, `brew doctor` will give a long
+warning about node, but that warning can just be ignored.)
 
 ### Web Dev on Windows
 
