@@ -14,26 +14,21 @@ npm install
 # [not concerning](https://github.com/facebook/create-react-app/issues/11174).
 # After installation, you can check to see if the package-lock file was
 # altered, and note that an untracked `node_modules` folder is present, since
-# the `.config/.gitignore` file hasn't yet been enabled with the `.gitconfig`
-# file; see the next step.
+# altered, and decide whether this is a concern; note to authors -- in that case
+# maybe this repo should be updated.
 
 
-# 2. Reset the repo with a new custom git config file.
+# 2. Re-initialize the repo.
 #    1. Delete the git folder.
 #       For example, execute `rm -rf .git` (a Bash command) or
 #       `Remove-Item -Recurse -Force .git` (a PowerShell command).
 rm -rf .git
-#    2. Copy the custom git config file to the root of the repo.
-#       `cp .config/.gitconfig_sample .gitconfig`
-cp .config/.gitconfig_sample .gitconfig
-#    3. Initialize as a new git repo.
+#    2. Initialize as a new git repo.
 #       `git init`
 git init
-#    4. Enable the root config file.
+#    3. Enable the root config file.
 #        `git config --local include.path ../.gitconfig`
 git config --local include.path ../.gitconfig
-#        After this command, the `node_modules` folder and `.gitconfig` file
-#        itself should be ignored by git.
 
 
 # 3. Create a secrets file.
