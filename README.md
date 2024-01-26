@@ -155,5 +155,5 @@ A to-do list for continuing development of this template:
   especially forcing git to use the attributes file in the config folder and
   seeing if `git add --renormalize .` can work; that would simplify files and
   steps.  See the creation notes section on the
-  [config files](./docs/Creation.md#config-folder) for more detail on this
+  [config folder](./docs/Creation.md#config-folder) for more detail on this
   issue.
