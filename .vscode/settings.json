@@ -48,7 +48,7 @@
       "source.fixAll.markdownlint": "explicit"
     },
   },
-  "[sh][bash]": {
+  "[shellscript]": {
     "files.eol": "\n",
     "editor.insertSpaces": false,
     "editor.codeActionsOnSave": {
@@ -60,9 +60,10 @@
     },
   },
   "[powershell]": {
-    "files.eol": "\n",
+    "files.eol": "\r\n",
   },
   "[csharp]": {
+    "files.eol": "\r\n",
     "editor.tabSize": 4,
   },
 }
