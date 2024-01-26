@@ -48,89 +48,49 @@ PowerShell, and make sure that
 are installed and execute the following instructions and commands.
 
 1. Ensure installation and usage of Node version 20.  
-    For example, `nvm list`, `nvm install 20`, and `nvm use 20`.  
-    The precise version used could be something like `20.11.0` or a different
-    sub-version.
+  For example, `nvm list`, `nvm install 20`, and `nvm use 20`.  
+  The precise version used could be something like `20.11.0` or a different
+  sub-version.
+
 2. Get a local copy/clone of the repo.  
-    `git clone https://github.com/oneforawe/react-ts.git`
-3. Enter the repo.  
-    `cd react-ts`
-4. Install the packages.  
-    `npm install`  
-    As of 2024-01-24 there are about 14 deprecation warnings and 9
-    vulnerabilities (3 moderate, 6 high) expected and the `package-lock.json`
-    file is not altered by the installation. The warnings and vulnerabilities are
-    [not concerning](https://github.com/facebook/create-react-app/issues/11174).
-    After installation, you can check to see if the package-lock file was
-    altered, and note that an untracked `node_modules` folder is present, since
-    the `.config/.gitignore` file hasn't yet been enabled with the `.gitconfig`
-    file; see the next step.
-5. Reset the repo with a new custom git config file.
-    1. Delete the git folder.  
-        For example, execute `rm -rf .git` (a bash command) or
-        `Remove-Item -Recurse -Force .git` (a PowerShell command).
-    2. Copy the custom git config file to the root of the repo.  
-        `cp .config/.gitconfig_sample .gitconfig`
-    3. Initialize as a new git repo.  
-        `git init`
-    4. Enable the root config file.  
-        `git config --local include.path ../.gitconfig`  
-        After this command, the `node_modules` folder and `.gitconfig` file itself
-        should be ignored by git.
-6. Create a secrets file.  
-    `cp src/config/secrets_template.ts src/config/secrets.ts`  
-    This new secrets file will also be ignored, since it's included in the ignore
-    file.
-7. Fix any incorrect file line-endings.
-    1. Use the temporary git config file with a copy of the git attributes file
-        at the root of the repo to allow the following steps to work properly.  
-        `rm .gitconfig`  
-        `cp .config/.gitconfig_temp .gitconfig`  
-        `cp .config/.gitattributes .gitattributes`
-    2. Stage all of the (non-ignored) files.  
-        `git add .`  
-        Note whether there are any warnings based on line endings, including
-        explanations such as  
-        "CRLF will be replaced by LF the next time Git touches it"  
-        You can confirm this more explicitly with the command  
-        `git ls-files --stage --abbrev --eol`
-        which will show whether there is disagreement between "i"/index,
-        "w"/workspace, and "attr"/gitattributes. Such a disagreement, between
-        "w/crlf" and "attr/text eol=lf" line endings can show up like this:
-        `i/lf    w/crlf  attr/text eol=lf        .eslintrc.json`
-    3. If there are no warnings, you can skip the next step.
-    4. If there are warnings, you can automatically correct the files by
-        deleting all of the (non-ignored) files in the working tree and then
-        check them out from the index:  
-        `git ls-files -z | xargs -0 rm -f`   (WARNING: UNTESTED, for Bash)  
-        `git ls-files | % {Remove-Item $_}`  (for PowerShell)  
-        `git checkout .`  (for both shells)  
-        You can confirm the fix of the line endings with  
-        `git ls-files --stage --abbrev --eol`  
-        or by following the next step.
-    5. Open the repo root folder `react-ts` in VSCode by executing `code .` and
-        select a file to view (especially if you suspect it has incorrect line
-        endings) and examine the line-ending indicator in the lower right corner
-        of the window (which you can click-on to initiate a change in a file's
-        line endings, if you need to).  
-        Specifically, select the (ignored) file `src/config/secrets.ts` and
-        change it, if necessary, from "CRLF" to "LF", and save the file.
-    6. You can unstage if desired: `git rm --cached -r .`
-    7. Clean up the temp files and restore the git config.  
-        `rm .gitattributes`  
-        `rm .gitconfig`  
-        `cp .config/.gitconfig_sample .gitconfig`  
-8. Optional:  
-    Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
-    API key, and edit the secrets file to include the API key as a string,
-    otherwise the weather component will not show weather reports.
-9. Semi-Optional:  
-    Read the [development notes](./docs/Development.md) and install the
-    recommended VSCode extensions.  (Automatic linting while editing with VSCode
-    and its extensions is part of the point of this repo, though the code will
-    run without installing the extensions.)
-10. Run the app (in development mode).  
-    `npm start`
+  `git clone https://github.com/oneforawe/react-ts.git`
+
+3. Enter the repo and execute one of the set-up scripts.  
+   `cd react-ts`
+   * For PowerShell: `.\tools\set-up.ps1`
+   * For Bash: `bash ./tools/set-up.bash`
+
+   Note that the scripts have explanations of each step. Doing each step
+   yourself by hand and reading the explanations could be an educational
+   exercise.
+
+4. Fix any incorrect file line-endings for an ignored file.
+   1. Open the repo root folder `react-ts` in VSCode by executing  
+      `code .`
+   2. Select a file to view in the (primary)
+      [side bar](https://code.visualstudio.com/docs/getstarted/userinterface) /
+      Explorer.
+   3. Note that for any viewed file, you should see a line-ending indicator,
+      showing either "LF" or "CRLF", in the lower right corner of the window in
+      the [status bar](https://code.visualstudio.com/docs/getstarted/userinterface).
+      If you ever need to change the line-endings type of a file, you can click
+      on that indicator to initiate that change.
+   4. Specifically, select the (ignored) file `src/config/secrets.ts` and change
+      it, if necessary, from "CRLF" to "LF" line endings, and save the file.
+
+5. Optional:  
+  Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
+  API key, and edit the secrets file to include the API key as a string,
+  otherwise the weather component will not show weather reports.
+
+6. Semi-Optional:  
+  Read the [development notes](./docs/Development.md) and install the
+  recommended VSCode extensions.  (Automatic linting while editing with VSCode
+  and its extensions is part of the point of this repo, though the code will run
+  without installing the extensions.)
+
+7. Run the app (in development mode).  
+  `npm start`
 
 From here, you can play with the app in the browser, experiment with editing and
 saving your edits, and seeing your edits have immediate effect on the app, since
