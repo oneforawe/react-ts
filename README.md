@@ -145,6 +145,10 @@ delete the `.git` folder and copy-paste your code into an existing git repo.
 
 A to-do list for continuing development of this template:
 
+* Create set-up scripts (Bash and PowerShell versions).  Integrate the
+  explanations into the scripts.  Reduce the number of steps if possible.  (See
+  items below regarding git config and file-line-endings for possible ways to
+  reduce the number of steps.)
 * Investigate adding style/format linting for css/scss, since stylelint no
   longer provides that kind of linting.
 * Investigate possibility of putting the remaining config files into the config
