@@ -12,15 +12,15 @@ The purpose of this repo is:
   with the repo code and steps below, to avoid issues later in development), and
 * to demonstrate this particular approach and organization of code for any such
   React TypeScript project, using a generic folder structure, typescript and
-  css/scss [code linting](./docs/Development.md) (geared for usage with
+  css/scss [code linting](./doc/Development.md) (geared for usage with
   [VSCode](https://code.visualstudio.com/)), and optional features such as redux
   state management, helper hooks for cyclic state refreshing, services with
   external API calls, and so on.
 
-See the [development notes](./docs/Development.md) for tips on setting up the
+See the [development notes](./doc/Development.md) for tips on setting up the
 repo properly with VSCode and usage of `eslint` and `stylelint`.  See the
-[creation notes](./docs/Creation.md) for details on how this repo was created
-and how to re-create it.  And see the [web development](./docs/WebDev.md) notes
+[creation notes](./doc/Creation.md) for details on how this repo was created
+and how to re-create it.  And see the [web development](./doc/WebDev.md) notes
 for more general notes and elaboration on setup with node.
 
 ## Demo
@@ -44,7 +44,7 @@ To run the app in this repo, use a (virtual) terminal such as iTerm2 or Windows
 Terminal or the embedded terminal in VSCode, running a shell such as GNU Bash or
 PowerShell, and make sure that
 [git](https://git-scm.com) and [node/npm/npx](https://nodejs.org)
-(and [probably](./docs/WebDev.md) [nvm](https://github.com/nvm-sh/nvm))
+(and [probably](./doc/WebDev.md) [nvm](https://github.com/nvm-sh/nvm))
 are installed and execute the following instructions and commands.
 
 1. Ensure installation and usage of Node version 20.  
@@ -84,7 +84,7 @@ are installed and execute the following instructions and commands.
   otherwise the weather component will not show weather reports.
 
 6. Semi-Optional:  
-  Read the [development notes](./docs/Development.md) and install the
+  Read the [development notes](./doc/Development.md) and install the
   recommended VSCode extensions.  (Automatic linting while editing with VSCode
   and its extensions is part of the point of this repo, though the code will run
   without installing the extensions.)
@@ -119,5 +119,5 @@ A to-do list for continuing development of this template:
   especially forcing git to use the attributes file in the config folder and
   seeing if `git add --renormalize .` can work; that would simplify files and
   steps.  See the creation notes section on the
-  [config folder](./docs/Creation.md#config-folder) for more detail on this
+  [config folder](./doc/Creation.md#config-folder) for more detail on this
   issue.
