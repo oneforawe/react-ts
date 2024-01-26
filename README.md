@@ -37,8 +37,8 @@ To use this repo as a template starting point for your own project, first you
 will get this repo set up properly to run the app.  And once the app can run and
 you can verify that automatic linting is enabled in VSCode, you can delete the
 `.git` folder (again) and initialize a new git repo from this template if
-needed. The numbered steps below include steps on resetting and initializing the
-repo as part of setting up.
+needed. The scripts referenced below include steps on resetting and initializing
+the repo as part of setting up; open the scripts to get further explanation.
 
 To run the app in this repo, use a (virtual) terminal such as iTerm2 or Windows
 Terminal or the embedded terminal in VSCode, running a shell such as GNU Bash or
