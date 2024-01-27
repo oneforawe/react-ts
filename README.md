@@ -56,13 +56,11 @@ are installed and execute the following instructions and commands.
   `git clone https://github.com/oneforawe/react-ts.git`
 
 3. Enter the repo and execute one of the set-up scripts.  
-   `cd react-ts`
-   * For PowerShell: `.\tools\set-up.ps1`
-   * For Bash: `bash ./tools/set-up.bash`
-
-   Note that the scripts have explanations of each step. Doing each step
-   yourself by hand and reading the explanations could be an educational
-   exercise.
+  `cd react-ts`  
+  For Bash: `bash ./tools/set-up.bash`  
+  For PowerShell: `.\tools\set-up.ps1`  
+  Note that the scripts have explanations of each step. Doing each step yourself
+  by hand and reading the explanations could be an educational exercise.
 
 4. Fix any incorrect file line-endings for an ignored file.
    1. Open the repo root folder `react-ts` in VSCode by executing  
