@@ -73,8 +73,9 @@ are installed and execute the following instructions and commands.
       the [status bar](https://code.visualstudio.com/docs/getstarted/userinterface).
       If you ever need to change the line-endings type of a file, you can click
       on that indicator to initiate that change.
-   4. Specifically, select the (ignored) file `src/config/secrets.ts` and change
-      it, if necessary, from "CRLF" to "LF" line endings, and save the file.
+   4. Specifically, select the (ignored) file `src/config/secrets.ts` and, if
+      it shows as "CRLF", change it from "CRLF" to "LF" line endings and save
+      the file.
 
 5. Optional:  
   Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
