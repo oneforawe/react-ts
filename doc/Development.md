@@ -1,13 +1,12 @@
 # Development
 
-This repo is designed for usage with the following IDE, configurations, and
-extensions.
+This repo is designed for usage with the following IDE (integrated development
+environment), configurations, and extensions.
 
-An editor or IDE (integrated development environment) such as
-[VSCode](https://code.visualstudio.com/) (aka "Code", Visual Studio Code from
-Microsoft) can perform automatic linting (syntax and style flagging and
-enforcement / correction) and type-checking, as well as many other useful tasks
-and functionalities, some provided by
+An editor or IDE such as [VSCode](https://code.visualstudio.com/) (aka "Code",
+Visual Studio Code from Microsoft) can perform automatic linting (syntax and
+style flagging and enforcement / correction) and type-checking, as well as many
+other useful tasks and functionalities, some provided by
 [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace)
 that can be installed into the editor.
 

@@ -12,7 +12,7 @@ For web development in JavaScript / TypeScript, here are some useful tools:
     For example, using ssh (Secure Shell network protocol) can be used with git
     to have a simple secure means of interacting with a repository with the
     "origin" hosted on a remote machine.
-  * IDEs / editors  
+  * Editors / IDEs  
     See [here](./Development.md) for more on VSCode.  Note that vim is an editor
     that most people won't want to use, but if you're already familiar with it
     and want to use it, it can be integrated with git as a default editor, so I
