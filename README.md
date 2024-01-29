@@ -19,9 +19,9 @@ The purpose of this repo is:
 
 See the [development notes](./doc/Development.md) for tips on setting up the
 repo properly with VSCode and usage of `eslint` and `stylelint`.  See the
-[creation notes](./doc/Creation.md) for details on how this repo was created
-and how to re-create it.  And see the [web development](./doc/WebDev.md) notes
-for more general notes and elaboration on setup with node.
+[web development](./doc/WebDev.md) notes for more general notes and elaboration
+on setup with node.  And see the [creation notes](./doc/Creation.md) for details
+on how this repo was created and how to re-create it.
 
 ## Demo
 
