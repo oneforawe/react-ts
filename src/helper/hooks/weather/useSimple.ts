@@ -12,6 +12,6 @@ export const useWeatherStateSimple = (input: T.Weather.RequestInput) => {
   useEffect(() => {
     /* Get and set state at initial rendering. */
     dispatch(actions.weather.thunk.getAndSetState(input));
-  }, []);
+  }, [input]);
 
 };
