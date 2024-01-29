@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
-  "cracoConfig": ".config/craco.config.js",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
   },
+  "cracoConfig": ".config/craco.config.js",
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      ".config/.eslintrc.json"
     ]
   },
   "browserslist": {
