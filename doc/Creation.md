@@ -100,7 +100,9 @@ elsewhere, either at the root or in the `.vscode` folder.
     that, as well as the `.gitconfig_temp` file noted below.
 * modified: `package.json`  
   Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
-  into the config folder.
+  into the config folder.  
+  Added `".config/.eslintrc.json"` to the `eslintConfig` property `extends` list
+  to move the eslint config into the config folder.
 * modified: `tsconfig.json`  
   Changed "extends" property to `"extends": "./.config/tsconfig.paths.json",`
   to move the paths aliases into the config folder.
