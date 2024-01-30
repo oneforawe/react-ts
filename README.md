@@ -109,7 +109,8 @@ A to-do list for continuing development of this template:
 * Investigate possibility of putting the remaining config files into the config
   folder.
 * Investigate improving the css/scss style/format linting. Currently using
-  stylefmt but it doesn't fix, for example, missing semi-colons or rgb function
+  [stylefmt](https://marketplace.visualstudio.com/items?itemName=ronilaukkarinen.vscode-stylefmt)
+  but it doesn't fix, for example, missing semi-colons or rgb function
   formatting (stylelint rule color-function-notation).  Could either improve
   configuration of stylefmt or find a better formatter solution. (Stylelint no
   longer provides that kind of linting.)
