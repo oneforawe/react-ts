@@ -106,10 +106,13 @@ an existing git repo.
 
 A to-do list for continuing development of this template:
 
-* Investigate adding style/format linting for css/scss, since stylelint no
-  longer provides that kind of linting.
 * Investigate possibility of putting the remaining config files into the config
   folder.
+* Investigate improving the css/scss style/format linting. Currently using
+  stylefmt but it doesn't fix, for example, missing semi-colons or rgb function
+  formatting (stylelint rule color-function-notation).  Could either improve
+  configuration of stylefmt or find a better formatter solution. (Stylelint no
+  longer provides that kind of linting.)
 * Investigate having the git config file refer to a separate credentials file;
   that would simplify files and steps.
 * Investigate simplifying the process to automatically fix file-line-endings,

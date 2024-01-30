@@ -16,6 +16,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.stylelint": "never",
+      "source.fixAll.stylefmt": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.eslint": "explicit",
@@ -26,7 +27,7 @@
   "stylelint.validate": ["css", "scss"],
   "[css][scss]": {
     // "editor.defaultFormatter": "stylelint.vscode-stylelint",
-    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ronilaukkarinen.vscode-stylefmt",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
@@ -34,7 +35,7 @@
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.stylelint": "never",
-      // "source.fixAll.stylelint": "explicit",
+      "source.fixAll.stylefmt": "explicit",
     },
   },
   "[json]": {
@@ -52,6 +53,7 @@
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.stylelint": "never",
+      "source.fixAll.stylefmt": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.markdownlint": "explicit",
     },
@@ -65,6 +67,7 @@
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.stylelint": "never",
+      "source.fixAll.stylefmt": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "explicit",
     },

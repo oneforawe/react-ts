@@ -1,2 +1,11 @@
 $main-background-color: rgb(  40,  44,  52, 100% ); // #282c34;
 $body-background-color: rgb( 168, 172, 180, 100% );
+
+/*
+** When a good formatter solution is implemented in this repo, the two colors
+** above should be auto-formatted as shown below (with spacing with the rgb
+** function showed as desired to line up the values across lines):
+*/
+
+// $main-background-color: rgb(  40  44  52 / 100% ); // #282c34;
+// $body-background-color: rgb( 168 172 180 / 100% );

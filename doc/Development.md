@@ -27,7 +27,8 @@ and gain other useful features:
   * `DavidAnson.vscode-markdownlint`
   * `dbaeumer.vscode-eslint`
   * `stylelint.vscode-stylelint`
-  * `timonwong.shellcheck` (not used but referenced in `settings.json`)
+  * `ronilaukkarinen.vscode-stylefmt`
+  * `timonwong.shellcheck`
   * `ms-python.pylint` (not used but referenced in `settings.json`)
 * General
   * `eamodio.gitlens`
