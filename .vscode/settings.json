@@ -27,16 +27,14 @@
   "[css][scss]": {
     // "editor.defaultFormatter": "stylelint.vscode-stylelint",
     // "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
-      // "source.fixAll.stylelint": "never",
+      "source.fixAll.stylelint": "never",
       // "source.fixAll.stylelint": "explicit",
-      // "source.fixAll.scssformatter": "explicit",  scssformatter ???
     },
   },
   "[json]": {
