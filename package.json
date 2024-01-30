@@ -17,6 +17,9 @@
       ".config/.eslintrc.json"
     ]
   },
+  "stylelint": {
+    "extends": "./.config/.stylelintrc.json"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
