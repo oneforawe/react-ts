@@ -5,19 +5,17 @@
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  // "editor.defaultFormatter": "dprint.dprint",
-  // "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "stylelint.vscode-stylelint",
-  // "editor.formatOnSave": true,
   "[python]": {
     "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.pylint",
     "editor.formatOnSave": true,
   },
   "[javascript][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.stylelint": "never",
-      "source.fixAll.dprint": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.eslint": "explicit",
@@ -29,15 +27,13 @@
   "[css][scss]": {
     // "editor.defaultFormatter": "stylelint.vscode-stylelint",
     // "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "dprint.dprint",
-    // "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
-      "source.fixAll.stylelint": "explicit",
-      // "source.fixAll.dprint": "never",
+      "source.fixAll.stylelint": "never",
+      // "source.fixAll.stylelint": "explicit",
     },
   },
   "[json]": {
@@ -49,11 +45,12 @@
     "MD024": { "siblings_only": true },
   },
   "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.stylelint": "never",
-      "source.fixAll.dprint": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.markdownlint": "explicit",
     },
@@ -61,11 +58,12 @@
   "[shellscript]": {
     "files.eol": "\n",
     "editor.insertSpaces": false,
+    "editor.defaultFormatter": "timonwong.shellcheck",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.stylelint": "never",
-      "source.fixAll.dprint": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "explicit",
     },
