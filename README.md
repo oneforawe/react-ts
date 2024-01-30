@@ -96,11 +96,12 @@ From here, you can play with the app in the browser, experiment with editing the
 code in VSCode and saving your edits, and see your edits have immediate effect
 on the app, since it's running live in development mode.  You should also see
 your edits be linted/auto-fixed by the linting infrastructure immediately on
-each save of a file in VSCode.  If not, trouble-shoot.  Once it all works as
-expected, you can either continue-on editing as desired and adding/commiting
-your code to your repo as is, or initialize the repo again from a new starting
-point if needed, or just delete the `.git` folder and copy-paste your code into
-an existing git repo.
+each save of a file in VSCode.  If not, trouble-shoot.  (Some errors in SCSS are
+not auto-fixed -- see to-do items below -- but something like bad indentation
+should be auto-fixed.) Once it all works as expected, you can either continue-on
+editing as desired and adding/commiting your code to your repo as is, or
+initialize the repo again from a new starting point if needed, or just delete
+the `.git` folder and copy-paste your code into an existing git repo.
 
 ## To Do
 
