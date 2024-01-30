@@ -72,7 +72,6 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 * `npm install --save-dev eslint`
 * `npm install --save-dev @stylistic/eslint-plugin`
 * `npm install --save-dev stylelint`
-* `npm install --save-dev stylelint-config-standard`
 * `npm install --save-dev stylelint-config-standard-scss`
 
 ## Config Folder
@@ -101,8 +100,11 @@ locations elsewhere, either at the root or in the `.vscode` folder.
 * modified: `package.json`  
   Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
   into the config folder.  
-  Added `".config/.eslintrc.json"` to the `eslintConfig` property `extends` list
-  to move the eslint config into the config folder.
+  Added to the `eslintConfig` property another `extends` list element value of
+  `".config/.eslintrc.json"` to move the eslint config into the config folder.  
+  Added a `"stylelint"` property with an `extends` property value of
+  `".config/.stylelintrc.json"`  to move the stylelint config into the config
+  folder.
 * modified: `tsconfig.json`  
   Changed "extends" property to `"extends": "./.config/tsconfig.paths.json",`
   to move the paths aliases into the config folder.
