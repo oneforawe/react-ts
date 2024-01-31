@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // "rootDir": "./", /* Specify the root folder within your source files. */
-    "rootDir": "../src",
+    // "rootDir": "../src",
     // "baseUrl": "",   /* Specify the base directory to resolve non-relative module names. */
     "baseUrl": "../src",
     // "paths": {},     /* Specify a set of entries that re-map imports to additional lookup locations. */
@@ -9,7 +9,4 @@
       "@c/*": ["./components/*"],
     },
   },
-  "include": [
-    "../src",
-  ],
 }
