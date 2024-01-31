@@ -10,6 +10,7 @@
     "eject": "craco eject"
   },
   "cracoConfig": ".config/craco.config.js",
+  "tsconfig": "./.config/tsconfig.json",
   "eslintConfig": {
     "extends": [
       "react-app",
