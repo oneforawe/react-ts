@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@c/*": ["./components/*"]
-    }
-  }
+    // "rootDir": "./", /* Specify the root folder within your source files. */
+    // "baseUrl": "",   /* Specify the base directory to resolve non-relative module names. */
+    "baseUrl": "./src", // See duplication of baseUrl in tsconfig.json and related `include` property.
+    // "paths": {},     /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "paths": { // path-aliases
+      "@c/*": ["./components/*"],
+    },
+  },
 }
