@@ -94,8 +94,8 @@ are installed and execute the following instructions and commands.
 
 From here, you can play with the app in the browser, experiment with editing the
 code in VSCode and saving your edits, and see your edits have immediate effect
-on the app, since it's running live in development mode.  You should also see
-your edits be linted/auto-fixed by the linting infrastructure immediately on
+on the app, since it's running live in development/watch mode.  You should also
+see your edits be linted/auto-fixed by the linting infrastructure immediately on
 each save of a file in VSCode.  If not, trouble-shoot.  (Some errors in SCSS are
 not auto-fixed -- see to-do items below -- but something like bad indentation
 should be auto-fixed.) Once it all works as expected, you can either continue-on
