@@ -1,4 +1,4 @@
-{
+{ // See duplication of baseUrl in tsconfig.json and related `include` property.
   "compilerOptions": {
     // "rootDir": "./",      /* Specify the root folder within your source files. */
     // "rootDir": "../",
@@ -7,7 +7,7 @@
     // "baseUrl": "../",
     "baseUrl": "../src",
     // "paths": {},          /* Specify a set of entries that re-map imports to additional lookup locations. */
-    "paths": {
+    "paths": { // path-aliases
       "@c/*": ["./components/*"],
     },
   },
