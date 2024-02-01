@@ -11,7 +11,8 @@
       "@c/*": ["./components/*"],
     },
   },
-  // "include": [
-  //   "../src",
-  // ],
+  "include": [
+    "../src",
+    "src",
+  ],
 }
