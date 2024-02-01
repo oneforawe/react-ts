@@ -10,7 +10,6 @@
     "eject": "craco eject"
   },
   "cracoConfig": ".config/craco.config.js",
-  "tsConfig": ".config/tsconfig.json",
   "tsconfig": {
     "extends": ".config/tsconfig.json"
   },
