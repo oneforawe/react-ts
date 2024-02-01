@@ -11,16 +11,20 @@ require('json5/lib/register'); // craco+react-app-alias needs this json5 support
 require.extensions['.json'] = require.extensions['.json5'];
 
 
-const resolvedTsConfigPathsPath = path.resolve('./.config/tsconfig.paths.json');
-const resolvedTsConfigPath = path.resolve('./.config/tsconfig.json');
-const resolvedBaseUrlPath = path.resolve('./src');
-const aliasMap = configPaths(resolvedTsConfigPathsPath);
+// const resolvedTsConfigPath = path.resolve('./.config/tsconfig.json');
+// const resolvedTsConfigPathsPath = path.resolve('./.config/tsconfig.paths.json');
+// const aliasMap = configPaths(resolvedTsConfigPathsPath);
+const aliasMap = configPaths('./.config/tsconfig.paths.json');
 
 const cracoAliasOptions = {
   // default is empty for most cases (but not given this repo's .config folder)
-  tsconfig: resolvedTsConfigPath,
-  baseUrl:  resolvedBaseUrlPath,
+  tsconfig: './.config/tsconfig.json',
+  // tsconfig: resolvedTsConfigPath,
+  // baseUrl:  resolvedBaseUrlPath + '\\',
+  // baseUrl:  resolvedBaseUrlPath,
+  baseUrl: 'src',
   alias:    aliasMap,
+  autoscan: 'src',
 };
 
 
