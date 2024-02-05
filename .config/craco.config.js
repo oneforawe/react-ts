@@ -13,6 +13,7 @@ require.extensions['.json'] = require.extensions['.json5'];
 
 // const resolvedTsConfigPath = path.resolve('./.config/tsconfig.json');
 // const resolvedTsConfigPathsPath = path.resolve('./.config/tsconfig.paths.json');
+// const resolvedBaseUrlPath = path.resolve('./src');
 // const aliasMap = configPaths(resolvedTsConfigPathsPath);
 const aliasMap = configPaths('./.config/tsconfig.paths.json');
 
@@ -22,13 +23,17 @@ const cracoAliasOptions = {
   // tsconfig: resolvedTsConfigPath,
   // baseUrl:  resolvedBaseUrlPath + '\\',
   // baseUrl:  resolvedBaseUrlPath,
-  baseUrl: 'src',
+  // baseUrl: '../src',
+  baseUrl: './src',
+  // baseUrl: 'src',
+  // baseUrl: '.',
   alias:    aliasMap,
-  autoscan: 'src',
+  // autoscan: 'src',
+  autoscan: './src',
 };
 
 
-module.exports = aliasWebpack(cracoAliasOptions);
+// module.exports = aliasWebpack(cracoAliasOptions);
 // module.exports.jest = aliasJest(cracoAliasOptions);
 
 module.exports = {

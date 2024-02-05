@@ -177,5 +177,6 @@
       }
     }
   ],
+  "ignorePatterns": ["tools/react-app-alias-mod/*"],
   "root": true
 }
