@@ -1,6 +1,10 @@
 # Creation of the Repo
 
-Note: The commands below were not necessarily executed in the order shown.
+See the [web-dev](./WebDev.md) and [development](./Development.md) notes for the
+initial setup before executing the commands below.
+
+Note: The commands below were not executed in the order shown, but the order
+shown is more organized and should be appropriate.
 
 ## Initialize
 
