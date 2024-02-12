@@ -15,8 +15,9 @@ For web development in JavaScript / TypeScript, here are some useful tools:
   * Editors / IDEs  
     See [here](./Development.md) for more on VSCode.  Note that vim is an editor
     that most people won't want to use, but if you're already familiar with it
-    and want to use it, it can be integrated with git as a default editor, so I
-    include it here, with notes below below, for my own interest at least.
+    and want to use it, it can be integrated with git as a default editor, and
+    its key-bindings can be used in VSCode, so I mention it here, with notes
+    below, for my own interest at least.
 
 * Back-end / Runtime  
   [Node](https://nodejs.org/en/)
