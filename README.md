@@ -11,17 +11,17 @@ The purpose of this repo is:
   accomplish certain tasks (such as achieving robust file-line-ending control
   with the repo code and steps below, to avoid issues later in development), and
 * to demonstrate this particular approach and organization of code for any such
-  React TypeScript project, using a generic folder structure, typescript and
-  css/scss [code linting](./doc/Development.md) (geared for usage with
+  React TypeScript project, using a generic folder structure,
+  [code linting](./doc/Development.md) (geared for usage with
   [VSCode](https://code.visualstudio.com/)), and optional features such as redux
   state management, helper hooks for cyclic state refreshing, services with
   external API calls, and so on.
 
 See the [development notes](./doc/Development.md) for tips on setting up the
 repo properly with VSCode and usage of `eslint` and `stylelint`.  See the
-[web development](./doc/WebDev.md) notes for more general notes and elaboration
-on setup with node.  And see the [creation notes](./doc/Creation.md) for details
-on how this repo was created and how to re-create it.
+[web dev notes](./doc/WebDev.md) for more general notes and elaboration on setup
+with node.  And see the [creation notes](./doc/Creation.md) for details on how
+this repo was created and how to re-create it.
 
 ## Demo
 
