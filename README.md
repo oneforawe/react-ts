@@ -18,7 +18,7 @@ The purpose of this repo is:
   external API calls, and so on.
 
 See the [development notes](./doc/Development.md) for tips on setting up the
-repo properly with VSCode and usage of `eslint` and `stylelint`.  See the
+repo properly with VSCode and some linting details.  See the
 [web dev notes](./doc/WebDev.md) for more general notes and elaboration on setup
 with node.  And see the [creation notes](./doc/Creation.md) for details on how
 this repo was created and how to re-create it.
