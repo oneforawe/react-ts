@@ -33,7 +33,7 @@ and gain other useful features:
 * General
   * `eamodio.gitlens`
   * `ybaumes.highlight-trailing-white-spaces`
-* Recommended Miscellaneous/Utility
+* Recommended Utility
   * `pucelle.vscode-css-navigation`
   * `compulim.indent4to2`
 

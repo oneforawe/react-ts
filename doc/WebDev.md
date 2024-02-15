@@ -110,7 +110,7 @@ Again, a caveat that most will not want to use vim (though it can be nice as a
 default editor with git). And ssh may not be necessary but is helpful.
 
 * vim (EG [gvim](https://www.vim.org/download.php)
--- `C:\Program Files (x86)\Vim\vim82`)  
+  -- `C:\Program Files (x86)\Vim\vim82`)  
   When using the installer, be sure to check the "create .bat files" option so
   vim/gvim will work in the terminal/console, as explained
   [here](https://stackoverflow.com/questions/10049316/how-do-you-run-vim-in-windows).
@@ -126,15 +126,15 @@ default editor with git). And ssh may not be necessary but is helpful.
 * git (EG [git-scm](https://git-scm.com/download/win), also promoted
   [here](https://gitforwindows.org/))
 * [nvm-windows](https://github.com/coreybutler/nvm-windows)
-(node version manager for windows)
+  (node version manager for windows)
   * Installing/Upgrading NVM for Windows  
     Install: `nvm-setup.exe` (via `nvm-setup.zip`)  
     Upgrade: `nvm-update.exe` (via `nvm-update.zip`)
   * Installing versions of Node  
     EG: `nvm install 20` and then `nvm use 20` or `nvm use 20.x.y`
 * ssh (see
-[instructions](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
-or maybe tutorials such as
-[this one](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)
-within the context of Windows Terminal
-)
+  [instructions](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
+  or maybe tutorials such as
+  [this one](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)
+  within the context of Windows Terminal
+  )

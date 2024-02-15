@@ -12,9 +12,10 @@ The following commands were used to initialize the repository.
 
 * `npx create-react-app react-ts --template typescript`
 * `cd react-ts`
-* `rm tsconfig.json && npx tsc --init`  (get more-commented file, meld with original)
+* `mv tsconfig.json tsconfig-copy.json && npx tsc --init`
+  (get a more-commented config, edit to combine with original)
 * `git init`
-* `vim .gitconfig`  (add file `.gitconfig` with appropriate user/author)
+* Add file `.gitconfig` (with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
 ## Remove Warning
@@ -156,7 +157,7 @@ The code in the `src` folder was developed from the starting point provided by
 create-react-app (the first initializing command) to its current state as the
 above steps were taken to hone the project.
 
-## Docs
+## Doc
 
 Continually wrote and revised the documentation.
 
