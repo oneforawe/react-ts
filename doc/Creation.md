@@ -79,6 +79,7 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 * `npm install --save-dev @stylistic/eslint-plugin`
 * `npm install --save-dev stylelint`
 * `npm install --save-dev stylelint-config-standard-scss`
+* `npm install --save-dev --save-exact prettier`
 
 ## Config Folder
 
