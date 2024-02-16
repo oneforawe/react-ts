@@ -1,6 +1,5 @@
 {
   "files.eol": "\n",
-  "editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
   "editor.rulers": [72, 80],
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
@@ -12,17 +11,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.pylint": "never",
-      "source.fixAll.eslint": "never",
-      "source.fixAll.stylelint": "never",
-      "source.fixAll.stylefmt": "never",
-      "source.fixAll.shellcheck": "never",
-      "source.fixAll.markdownlint": "explicit",
-    },
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
   },
   "[javascript][typescript][typescriptreact]": {
@@ -31,7 +22,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.pylint": "never",
       "source.fixAll.stylelint": "never",
-      "source.fixAll.stylefmt": "never",
+      "source.fixAll.prettier": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "never",
       "source.fixAll.eslint": "explicit",
@@ -42,16 +33,8 @@
   "stylelint.validate": ["css", "scss"],
   "[css][scss]": {
     // "editor.defaultFormatter": "stylelint.vscode-stylelint",
-    "editor.defaultFormatter": "ronilaukkarinen.vscode-stylefmt",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.pylint": "never",
-      "source.fixAll.eslint": "never",
-      "source.fixAll.markdownlint": "never",
-      "source.fixAll.shellcheck": "never",
-      "source.fixAll.stylelint": "never",
-      "source.fixAll.stylefmt": "explicit",
-    },
   },
   "[python]": {
     "editor.tabSize": 4,
@@ -67,7 +50,7 @@
       "source.fixAll.pylint": "never",
       "source.fixAll.eslint": "never",
       "source.fixAll.stylelint": "never",
-      "source.fixAll.stylefmt": "never",
+      "source.fixAll.prettier": "never",
       "source.fixAll.markdownlint": "never",
       "source.fixAll.shellcheck": "explicit",
     },

@@ -25,9 +25,9 @@ and gain other useful features:
 
 * Linting
   * `DavidAnson.vscode-markdownlint`
+  * `esbenp.prettier-vscode`
   * `dbaeumer.vscode-eslint`
   * `stylelint.vscode-stylelint`
-  * `ronilaukkarinen.vscode-stylefmt`
   * `timonwong.shellcheck`
   * `ms-python.pylint` (not used but referenced in `settings.json`)
 * General
