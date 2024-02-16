@@ -1,13 +1,12 @@
 # Development
 
-This repo is designed for usage with the following IDE, configurations, and
-extensions.
+This repo is designed for usage with the following IDE (integrated development
+environment), configurations, and extensions.
 
-An editor or IDE (integrated development environment) such as
-[VSCode](https://code.visualstudio.com/) (aka "Code", Visual Studio Code from
-Microsoft) can perform automatic linting (syntax and style flagging and
-enforcement / correction) and type-checking, as well as many other useful tasks
-and functionalities, some provided by
+The editor/IDE [VSCode](https://code.visualstudio.com/) (aka "Code", Visual
+Studio Code from Microsoft) can perform automatic linting (syntax and style
+flagging and enforcement / correction) and type-checking, as well as many other
+useful tasks and functionalities, some provided by
 [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace)
 that can be installed into the editor.
 
@@ -18,21 +17,28 @@ Note: A separate user settings file can control the configuration globally for a
 user on a particular machine, and those user settings can be partly or wholy
 overridden by the workspace settings file.
 
+You may need to install VSCode version 1.85 or greater for it to accept the
+`settings.json` file as it is written.
+
 With VSCode installed, you can install these VSCode extensions to enable linting
 and gain other useful features:
 
 * Linting
-  * `davidanson.vscode-markdownlint`
+  * `DavidAnson.vscode-markdownlint`
+  * `esbenp.prettier-vscode`
   * `dbaeumer.vscode-eslint`
   * `stylelint.vscode-stylelint`
-  * `timonwong.shellcheck` (not used but referenced in `settings.json`)
+  * `timonwong.shellcheck`
   * `ms-python.pylint` (not used but referenced in `settings.json`)
 * General
-  * `eamodio.gitlens`
+  * `eamodio.gitlens`  (you may want to usually keep this extension disabled)
   * `ybaumes.highlight-trailing-white-spaces`
-* Recommended Miscellaneous/Utility
+* Recommended Utility
   * `pucelle.vscode-css-navigation`
   * `compulim.indent4to2`
+
+Make sure that the linting extensions are not disabled when you want the linting
+to be active.
 
 ## ESLint and Stylelint
 

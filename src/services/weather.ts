@@ -8,7 +8,8 @@ export async function getReport (
 ): Promise<T.Weather.Report> {
 
   const query =
-    `key=${config.secrets.API_KEY_WEATHER}` + '&' +
+    `key=${config.secrets.API_KEY_WEATHER}` +
+    '&' +
     `q=${input['city-name']}`;
 
   const url = config.urls.weather.report.current.base + '?' + query;

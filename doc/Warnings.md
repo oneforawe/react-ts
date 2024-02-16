@@ -187,6 +187,13 @@ properly:
 * `npm uninstall @typescript-eslint/parser`
 * `npm uninstall eslint-plugin-react`
 
+Also, later, I decided to see if I can get rid of `stylelint-config-standard`,
+since `stylelint-config-standard-scss`  extends (and should include) it, I
+think, and it seems that everything still works (as well as before, though the
+full formatting solution hasn't been found yet).
+
+* `npm uninstall stylelint-config-standard`
+
 ## Craco
 
 I initially stated that "The packages [craco](https://craco.js.org) and

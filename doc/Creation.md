@@ -1,6 +1,11 @@
 # Creation of the Repo
 
-Note: The commands below were not necessarily executed in the order shown.
+See the [web-dev](./WebDev.md) and [development](./Development.md) notes for the
+initial setup before attempting to execute the commands below, if desiring to
+replicate the creation process.
+
+Note: The commands below were not executed in the order shown, but the order
+shown is more organized and should be appropriate.
 
 ## Initialize
 
@@ -8,9 +13,10 @@ The following commands were used to initialize the repository.
 
 * `npx create-react-app react-ts --template typescript`
 * `cd react-ts`
-* `rm tsconfig.json && npx tsc --init`  (get more-commented file, meld with original)
+* `mv tsconfig.json tsconfig-copy.json && npx tsc --init`
+  (get a more-commented config, edit to combine with original)
 * `git init`
-* `vim .gitconfig`  (add file `.gitconfig` with appropriate user/author)
+* Add file `.gitconfig` (with appropriate user/author)
 * `git config --local include.path ../.gitconfig`  (apply `.gitconfig` to repo)
 
 ## Remove Warning
@@ -72,17 +78,17 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 * `npm install --save-dev eslint`
 * `npm install --save-dev @stylistic/eslint-plugin`
 * `npm install --save-dev stylelint`
-* `npm install --save-dev stylelint-config-standard`
 * `npm install --save-dev stylelint-config-standard-scss`
+* `npm install --save-dev --save-exact prettier`
 
 ## Config Folder
 
-Some of the config files have been moved into a config folder to reduce the
-clutter at the root of the repo.  This may cause issues and so these config
-files may later be moved back to the root.  See below for an issue that requires
-temporary shuffling of the git attributes file.  The config files that haven't
-been moved yet into the config folder seem to require default locations
-elsewhere, either at the root or in the `.vscode` folder.
+Some of the config files have been moved into a custom location -- a config
+folder -- to reduce the clutter at the root of the repo.  This may cause issues
+and so these config files may later be moved back to the root.  See below for an
+issue that requires temporary shuffling of the git attributes file.  The config
+files that haven't been moved yet into the config folder seem to require default
+locations elsewhere, either at the root or in the `.vscode` folder.
 
 * modified: `.gitconfig`  
   Added core properties
@@ -100,7 +106,12 @@ elsewhere, either at the root or in the `.vscode` folder.
     that, as well as the `.gitconfig_temp` file noted below.
 * modified: `package.json`  
   Added `"cracoConfig": ".config/craco.config.js",` to move the craco config
-  into the config folder.
+  into the config folder.  
+  Added to the `eslintConfig` property another `extends` list element value of
+  `".config/.eslintrc.json"` to move the eslint config into the config folder.  
+  Added a `"stylelint"` property with an `extends` property value of
+  `".config/.stylelintrc.json"`  to move the stylelint config into the config
+  folder.
 * modified: `tsconfig.json`  
   Changed "extends" property to `"extends": "./.config/tsconfig.paths.json",`
   to move the paths aliases into the config folder.
@@ -148,7 +159,7 @@ The code in the `src` folder was developed from the starting point provided by
 create-react-app (the first initializing command) to its current state as the
 above steps were taken to hone the project.
 
-## Docs
+## Doc
 
 Continually wrote and revised the documentation.
 

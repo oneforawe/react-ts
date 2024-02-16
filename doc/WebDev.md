@@ -12,11 +12,12 @@ For web development in JavaScript / TypeScript, here are some useful tools:
     For example, using ssh (Secure Shell network protocol) can be used with git
     to have a simple secure means of interacting with a repository with the
     "origin" hosted on a remote machine.
-  * IDEs / editors  
+  * Editors / IDEs  
     See [here](./Development.md) for more on VSCode.  Note that vim is an editor
     that most people won't want to use, but if you're already familiar with it
-    and want to use it, it can be integrated with git as a default editor, so I
-    include it here, with notes below below, for my own interest at least.
+    and want to use it, it can be integrated with git as a default editor, and
+    its key-bindings can be used in VSCode, so I mention it here, with notes
+    below, for my own interest at least.
 
 * Back-end / Runtime  
   [Node](https://nodejs.org/en/)
@@ -109,7 +110,7 @@ Again, a caveat that most will not want to use vim (though it can be nice as a
 default editor with git). And ssh may not be necessary but is helpful.
 
 * vim (EG [gvim](https://www.vim.org/download.php)
--- `C:\Program Files (x86)\Vim\vim82`)  
+  -- `C:\Program Files (x86)\Vim\vim82`)  
   When using the installer, be sure to check the "create .bat files" option so
   vim/gvim will work in the terminal/console, as explained
   [here](https://stackoverflow.com/questions/10049316/how-do-you-run-vim-in-windows).
@@ -125,15 +126,15 @@ default editor with git). And ssh may not be necessary but is helpful.
 * git (EG [git-scm](https://git-scm.com/download/win), also promoted
   [here](https://gitforwindows.org/))
 * [nvm-windows](https://github.com/coreybutler/nvm-windows)
-(node version manager for windows)
+  (node version manager for windows)
   * Installing/Upgrading NVM for Windows  
     Install: `nvm-setup.exe` (via `nvm-setup.zip`)  
     Upgrade: `nvm-update.exe` (via `nvm-update.zip`)
   * Installing versions of Node  
     EG: `nvm install 20` and then `nvm use 20` or `nvm use 20.x.y`
 * ssh (see
-[instructions](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
-or maybe tutorials such as
-[this one](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)
-within the context of Windows Terminal
-)
+  [instructions](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
+  or maybe tutorials such as
+  [this one](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)
+  within the context of Windows Terminal
+  )

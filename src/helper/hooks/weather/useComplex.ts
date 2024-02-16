@@ -12,6 +12,6 @@ export const useWeatherStateComplex = (input: T.Weather.RequestInput) => {
   useEffect(() => {
     /* Start refresh (and refetch) cycles at initial rendering. */
     dispatch(actions.weather.thunk.getSetAndRefreshCycleState(input));
-  }, []);
+  }, [input]);
 
 };

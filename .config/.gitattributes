@@ -1,4 +1,4 @@
-# References:
+# Reference:
 # https://git-scm.com/docs/gitattributes/
 # https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
 
@@ -6,8 +6,15 @@
 # * View the line-endings for files (index version, working tree version, & attributes specifications):
 #   > git ls-files --eol
 # * Force the files to match the .gitattributes specifications file:
-#   [TODO: Add confirmed commands here; see react-ts README usage steps for
-#    special case of accomplishing this task.]
+#   [TODO: Add confirmed commands here; see react-ts README usage steps and/or
+#    tools set-up scripts for special case of accomplishing this task.
+#    For example:
+#        git ls-files -z | xargs -0 rm -f    (for Bash)
+#        git ls-files | % {Remove-Item $_}   (for PowerShell)
+#        git checkout .                      (for both shells)
+#    Alternate (but not working):
+#        git add --renormalize .             (for both shells)
+#   ]
 
 
 
@@ -44,6 +51,8 @@
 *.html            text eol=lf diff=html
 *.inc             text eol=lf
 *.ini             text eol=lf
+*.in              text eol=lf
+*.java            text eol=lf
 *.js              text eol=lf
 *.mjs             text eol=lf
 *.cjs             text eol=lf
@@ -75,11 +84,11 @@
 # Documentation
 *.ipynb           text eol=lf
 *.markdown        text eol=lf diff=markdown
-*.md              text eol=lf diff=markdown
-*.mdwn            text eol=lf diff=markdown
 *.mdown           text eol=lf diff=markdown
-*.mkd             text eol=lf diff=markdown
+*.mdwn            text eol=lf diff=markdown
 *.mkdn            text eol=lf diff=markdown
+*.mkd             text eol=lf diff=markdown
+*.md              text eol=lf diff=markdown
 *.mdtxt           text eol=lf
 *.mdtext          text eol=lf
 *.txt             text eol=lf
@@ -122,23 +131,33 @@ config            text eol=lf
 config_*          text eol=lf
 conf              text eol=lf
 conf_*            text eol=lf
+cnfg              text eol=lf
+cnfg_*            text eol=lf
+cfg               text eol=lf
+cfg_*             text eol=lf
 cnf               text eol=lf
 cnf_*             text eol=lf
 *.config          text eol=lf
 *.config_*        text eol=lf
 *.conf            text eol=lf
 *.conf_*          text eol=lf
+*.cnfg            text eol=lf
+*.cnfg_*          text eol=lf
+*.cfg             text eol=lf
+*.cfg_*           text eol=lf
 *.cnf             text eol=lf
 *.cnf_*           text eol=lf
 # EG: .editorconfig, .gitconfig
-.*config          text eol=lf
-.*config_*        text eol=lf
+*.*config         text eol=lf
+*.*config_*       text eol=lf
 # EG: .gitignore or .npmignore
 *.*ignore         text eol=lf
 *.*ignore_*       text eol=lf
 # EG: .gitattributes
 *.*attributes     text eol=lf
 *.*attributes_*   text eol=lf
+# EG: .gitmodules
+*.*modules        text eol=lf
 # EG: .eslintrc or .babelrc
 *.*rc             text eol=lf
 *.*rc_*           text eol=lf
