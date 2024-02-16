@@ -68,8 +68,8 @@ git add .
 #    4. If there are warnings, you can automatically correct the files by
 #        deleting all of the (non-ignored) files in the working tree and then
 #        check them out from the index:
-#        `git ls-files -z | xargs -0 rm -f`   (for Bash)
-#        `git ls-files | % {Remove-Item $_}`  (for PowerShell)
+#        For Bash: `git ls-files -z | xargs -0 rm -f`
+#        For PowerShell: `git ls-files | ForEach-Object {Remove-Item $_}`
 git ls-files -z | xargs -0 rm -f
 #        `git checkout .`  (for both shells)
 git checkout .
