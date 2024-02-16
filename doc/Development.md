@@ -31,11 +31,14 @@ and gain other useful features:
   * `timonwong.shellcheck`
   * `ms-python.pylint` (not used but referenced in `settings.json`)
 * General
-  * `eamodio.gitlens`
+  * `eamodio.gitlens`  (you may want to usually keep this extension disabled)
   * `ybaumes.highlight-trailing-white-spaces`
 * Recommended Utility
   * `pucelle.vscode-css-navigation`
   * `compulim.indent4to2`
+
+Make sure that the linting extensions are not disabled when you want the linting
+to be active.
 
 ## ESLint and Stylelint
 
