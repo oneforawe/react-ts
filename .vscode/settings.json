@@ -5,9 +5,24 @@
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.pylint",
+  "markdownlint.config": {
+    "default": true,
+    "MD024": { "siblings_only": true },
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.pylint": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.stylelint": "never",
+      "source.fixAll.stylefmt": "never",
+      "source.fixAll.shellcheck": "never",
+      "source.fixAll.markdownlint": "explicit",
+    },
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
     "editor.formatOnSave": true,
   },
   "[javascript][typescript][typescriptreact]": {
@@ -38,25 +53,10 @@
       "source.fixAll.stylefmt": "explicit",
     },
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.pylint",
     "editor.formatOnSave": true,
-  },
-  "markdownlint.config": {
-    "default": true,
-    "MD024": { "siblings_only": true },
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.pylint": "never",
-      "source.fixAll.eslint": "never",
-      "source.fixAll.stylelint": "never",
-      "source.fixAll.stylefmt": "never",
-      "source.fixAll.shellcheck": "never",
-      "source.fixAll.markdownlint": "explicit",
-    },
   },
   "[shellscript]": {
     "files.eol": "\n",
