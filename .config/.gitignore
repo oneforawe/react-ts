@@ -4,7 +4,7 @@
 
 
 # configs
-.gitconfig_user
+user.gitconfig
 
 # credentials
 secrets.*
