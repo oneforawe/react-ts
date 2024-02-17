@@ -61,13 +61,9 @@
       "last 1 safari version"
     ]
   },
-  "cracoConfig": ".config/craco.config.js",
+  "cracoConfig": "./.config/craco.config.js",
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      ".config/.eslintrc.json"
-    ]
+    "extends": "./.config/.eslintrc.json"
   },
   "stylelint": {
     "extends": "./.config/.stylelintrc.json"
