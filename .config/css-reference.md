@@ -1,7 +1,7 @@
 # CSS Configuration Reference
 
 * Selector Class Patterns
-  * kebab-case: `^[a-z]+(-[a-z0-9]+)*$`
+  * kebab-case: `^[a-z][a-z0-9]*(-[a-z0-9]+)*$`
   * camelCase:  `^[a-z][A-Za-z0-9]*$`
 * Possible usage in stylelint configs
   * Use kebab-case:  
