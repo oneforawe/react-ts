@@ -2,8 +2,8 @@
   "extends": "stylelint-config-standard-scss",
   "rules": {
     "value-keyword-case": "lower",
-    "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
-    "custom-property-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+    "selector-class-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+    "custom-property-pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
     "declaration-property-value-no-unknown": true,
     "rule-empty-line-before": null
   }
