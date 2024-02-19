@@ -32,7 +32,7 @@ cp .config/.gitconfig_temp .gitconfig
 cp .config/.gitattributes .gitattributes
 #    2. Stage all of the (non-ignored) files.
 #        `git add .`
-git add .
+git add . &>/dev/null # silence output for script
 #        Note whether there are any warnings based on line endings, including
 #        explanations such as
 #        "CRLF will be replaced by LF the next time Git touches it"
@@ -55,7 +55,7 @@ git checkout .
 #        `git ls-files --stage --abbrev --eol`
 #        or by following the next step.
 #    5. You can unstage if desired: `git rm --cached -r .`
-git rm --cached -r .
+git rm --cached -r . &>/dev/null # silence output for script
 #    6. Clean up the temp files and restore the git config.
 #        `rm .gitattributes`
 #        `rm .gitconfig`
