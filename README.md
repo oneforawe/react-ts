@@ -60,40 +60,25 @@ are installed and execute the following instructions and commands.
 2. Get a local copy/clone of the repo.  
   `git clone https://github.com/oneforawe/react-ts.git`
 
-3. Enter the repo and execute one of the set-up scripts.  
+3. Enter the repo and execute the appropriate set-up script.  
   `cd react-ts`  
   For Bash: `bash ./tools/set-up.bash`  
   For PowerShell: `.\tools\set-up.ps1`  
   Note that the scripts have explanations of each step. Doing each step yourself
   by hand and reading the explanations could be an educational exercise.
 
-4. Fix any incorrect file line-endings for an ignored file.
-   1. Open the repo root folder `react-ts` in VSCode by executing  
-      `code .`
-   2. Select a file to view in the (primary)
-      [side bar](https://code.visualstudio.com/docs/getstarted/userinterface) /
-      Explorer.
-   3. Note that for any viewed file, you should see a line-ending indicator,
-      showing either "LF" or "CRLF", in the lower right corner of the window in
-      the [status bar](https://code.visualstudio.com/docs/getstarted/userinterface).
-      If you ever need to change the line-endings type of a file, you can click
-      on that indicator to initiate that change.
-   4. Specifically, select the (ignored) file `src/config/secrets.ts` and, if
-      it shows as "CRLF", change it from "CRLF" to "LF" line endings and save
-      the file.
-
-5. Optional:  
+4. Optional:  
   Set up an account with [WeatherAPI.com](https://www.weatherapi.com/), get an
   API key, and edit the secrets file to include the API key as a string,
   otherwise the weather component will not show weather reports.
 
-6. Semi-Optional:  
+5. Semi-Optional:  
   Read the [development notes](./doc/Development.md) and install the latest
   version of VSCode and the recommended VSCode extensions.  (Automatic linting
   while editing with VSCode and its extensions is part of the point of this
   repo, though the code should still run without installing the extensions.)
 
-7. Run the app (in development mode).  
+6. Run the app (in development mode).  
   `npm start`  
   Wait and the app should automatically open in a browser.
 
@@ -114,8 +99,6 @@ A to-do list for continuing development of this template:
 
 * Investigate possibility of putting the remaining config files into the config
   folder.
-* Investigate having the git config file refer to a separate credentials file;
-  that would simplify files and steps.
 * Investigate simplifying the process to automatically fix file-line-endings,
   especially forcing git to use the attributes file in the config folder and
   seeing if `git add --renormalize .` can work; that would simplify files and
