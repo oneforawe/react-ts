@@ -18,7 +18,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
     ],
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     "jsx": "react-jsx",
