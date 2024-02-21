@@ -41,6 +41,10 @@
     "editor.defaultFormatter": "ms-python.pylint",
     "editor.formatOnSave": true,
   },
+  "shellcheck.ignorePatterns": {
+    "**/.env": true,
+    "**/.env.*": true,
+  },
   "[shellscript]": {
     "files.eol": "\n",
     "editor.insertSpaces": false,
