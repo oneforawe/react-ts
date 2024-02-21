@@ -162,6 +162,7 @@ cnf_*             text eol=lf
 *.*rc             text eol=lf
 *.*rc_*           text eol=lf
 .env              text eol=lf
+.env.*            text eol=lf
 .htaccess         text eol=lf
 *.lock            text eol=lf -diff
 package.json      text eol=lf
