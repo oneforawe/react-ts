@@ -42,6 +42,7 @@
     "editor.formatOnSave": true,
   },
   "shellcheck.ignorePatterns": {
+    "**/.gitconfig_*": true,
     "**/.env": true,
     "**/.env.*": true,
   },
