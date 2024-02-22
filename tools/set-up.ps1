@@ -20,8 +20,9 @@ git init
 git config --local include.path ../.gitconfig
 
 
-# 2. Fix any incorrect file line-endings.
-Write-Output "Fixing any incorrect file line-endings."
+# 2. Fix any incorrect file linebreaks according to .gitattributes.
+Write-Output "Fixing any incorrect file linebreaks according to .gitattributes."
+#    FYI: linebreaks = line-endings = end-of-line characters ~ eol
 #    1. Use the temporary git config file with a copy of the git attributes file
 #        at the root of the repo to allow the following steps to work properly.
 #        `rm .gitconfig`
@@ -31,6 +32,7 @@ Remove-Item .gitconfig
 Copy-Item .config/.gitconfig_temp .gitconfig
 Copy-Item .config/.gitattributes .gitattributes
 #    2. Stage all of the (non-ignored) files.
+#        This step is necessary for a new repo with no files committed yet.
 #        `git add .`
 git add . *> $null # silence output for script
 #        Note whether there are any warnings based on line endings, including
@@ -53,7 +55,7 @@ git ls-files | ForEach-Object {Remove-Item $_}
 git checkout .
 #        You can confirm the fix of the line endings with
 #        `git ls-files --stage --abbrev --eol`
-#        or by following the next step.
+#        or by following the next step and git-adding the files again.
 #    5. You can unstage if desired: `git rm --cached -r .`
 git rm --cached -r . *> $null # silence output for script
 #    6. Clean up the temp files and restore the git config.
