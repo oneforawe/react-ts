@@ -8,6 +8,20 @@
 #            .\tools\fix-linebreaks.ps1
 
 
+# 0. Requirement
+try {
+  $RequiredFile = ".\.config\.gitconfig_temp"
+  [System.IO.File]::OpenRead($RequiredFile).Close()
+  # If successful, the required file exists and is readable, so continue.
+}
+catch {
+  # If unsuccessful, the required file either doesn't exist or isn't readable,
+  # so we must exit and abort the fix-linebreaks attempt.
+  Write-Output "Error: Missing required file '$RequiredFile' - aborting fix-linebreaks attempt."
+  Exit 1
+}
+
+
 # 1. Fix any incorrect file linebreaks according to .gitattributes.
 Write-Output "Fixing any incorrect file linebreaks according to .gitattributes."
 #    FYI: linebreaks = line-endings = end-of-line characters ~ eol

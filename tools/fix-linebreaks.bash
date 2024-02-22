@@ -8,6 +8,15 @@
 #            bash ./tools/fix-linebreaks.bash
 
 
+# 0. Requirement
+requiredFile="./.config/.gitconfig_temp"
+if [[ ! -r requiredFile ]] # if not readable
+then
+	echo "Error: Missing required file '${requiredFile}'- aborting fix-linebreaks attempt." &&
+	exit 1 # terminate and indicate error with exit code
+fi
+
+
 # 1. Fix any incorrect file linebreaks according to .gitattributes.
 echo "Fixing any incorrect file linebreaks according to .gitattributes."
 #    FYI: linebreaks = line-endings = end-of-line characters ~ eol
