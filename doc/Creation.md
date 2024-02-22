@@ -33,7 +33,8 @@ Move some packages from `dependencies` to `devDependencies`.
 * `npm install --save-dev @types/node @types/react @types/react-dom @types/jest`
 * `npm install --save-dev @testing-library/react @testing-library/user-event @testing-library/jest-dom`
 * `npm install --save-dev react-scripts`  
-  (`--save-dev` so can use `npm audit --omit=dev` to see cleaner audit; [reference](https://github.com/facebook/create-react-app/issues/11174))
+  (`--save-dev` so can use `npm audit --omit=dev` to see cleaner audit;
+  [reference](https://github.com/facebook/create-react-app/issues/11174))
 * `npm install --save-dev typescript@^4`  
    (`@^4` to fix dependency issue found with `react-scripts` and, later, `craco`)
 
@@ -81,14 +82,17 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 * `npm install --save-dev stylelint-config-standard-scss`
 * `npm install --save-dev --save-exact prettier`
 
-## Config Folder
+## Config Folders
+
+Configuration folders: `.config` and `.vscode`
 
 Some of the config files have been moved into a custom location -- a config
-folder -- to reduce the clutter at the root of the repo.  This may cause issues
-and so these config files may later be moved back to the root.  See below for an
-issue that requires temporary shuffling of the git attributes file.  The config
-files that haven't been moved yet into the config folder seem to require default
-locations elsewhere, either at the root or in the `.vscode` folder.
+folder (`.config`) -- to reduce the clutter at the root of the repo.  This may
+cause issues and so these config files may later be moved back to the root.  See
+below for an issue that requires temporary shuffling of the git attributes file.
+The config files that haven't been moved yet into the config folder seem to
+require default locations elsewhere, either at the root or in the `.vscode`
+folder.
 
 * modified: `.gitconfig`  
   Added core properties
@@ -146,12 +150,24 @@ See more code in the repo for demonstration of usage.
 
 ## Add-ons
 
-* `npm install --save-dev sass` (for extended CSS - Syntactically Awesome Style Sheets)
+* `npm install --save-dev sass`
+  (for extended CSS - Syntactically Awesome Style Sheets)
 * `npm install sanitize.css` (for a preferred starting point with CSS)
 * `npm install luxon` (for date-time utilities)
 * `npm install lodash` (for computational utilities)
 * `npm install axios` (for HTTP requests)
 * `npm install runtypes` (for data validation when fetching from external API)
+
+## Tools
+
+In the tools folder, scripts (for Bash and PowerShell) were added for setting up
+the repo properly and for later usage if necessary to fix linebreaks after the
+repo is re-initialized and files are committed .
+
+* `set-up.bash`
+* `set-up.ps1`
+* `fix-linebreaks.bash`
+* `fix-linebreaks.ps1`
 
 ## App Src
 
