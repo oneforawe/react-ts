@@ -87,12 +87,12 @@ Some of these packages already come with `react-scripts`. Instead, I avoided
 Configuration folders: `.config` and `.vscode`
 
 Some of the config files have been moved into a custom location -- a config
-folder (`.config`) -- to reduce the clutter at the root of the repo.  This may
-cause issues and so these config files may later be moved back to the root.  See
-below for an issue that requires temporary shuffling of the git attributes file.
-The config files that haven't been moved yet into the config folder seem to
-require default locations elsewhere, either at the root or in the `.vscode`
-folder.
+folder (`.config`, "the" config folder) -- to reduce the clutter at the root of
+the repo.  This may cause issues and so these config files may later be moved
+back to the root.  See below for an issue that requires temporary shuffling of
+the git attributes file.  The config files that haven't been moved yet into the
+config folder seem to require default locations elsewhere, either at the root or
+in the `.vscode` folder.
 
 * modified: `.gitconfig`  
   Added core properties
