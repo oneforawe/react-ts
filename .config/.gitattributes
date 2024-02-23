@@ -4,16 +4,16 @@
 
 # Useful Commands:
 # * View the line-endings for files (index version, working tree version, & attributes specifications):
-#   > git ls-files --eol
+#     git ls-files --eol
 # * Force the files to match the .gitattributes specifications file:
 #   [TODO: Add confirmed commands here; see react-ts README usage steps and/or
 #    tools set-up scripts for special case of accomplishing this task.
 #    For example:
-#        git ls-files -z | xargs -0 rm -f    (for Bash)
-#        git ls-files | % {Remove-Item $_}   (for PowerShell)
-#        git checkout .                      (for both shells)
+#      git ls-files -z | xargs -0 rm -f    (for Bash)
+#      git ls-files | % {Remove-Item $_}   (for PowerShell)
+#      git checkout .                      (for both shells)
 #    Alternate (but not working):
-#        git add --renormalize .             (for both shells)
+#      git add --renormalize .             (for both shells)
 #   ]
 
 
