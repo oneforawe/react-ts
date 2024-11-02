@@ -4,7 +4,8 @@ This repository is a template for [React](https://react.dev) app projects
 written in [TypeScript](https://www.typescriptlang.org).
 
 See the [tech stack notes](./doc/Stack.md) for a fuller list of technologies
-used.  You can also see
+used.  You can see a (Dockerized)
+[contained version](https://github.com/oneforawe/react-ts-dock) of this repo and
 [another version](https://github.com/oneforawe/react-next-ts) of this repo
 that uses a more modern stack, but that version is still in development.
 
